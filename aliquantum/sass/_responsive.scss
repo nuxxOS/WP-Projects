@@ -1,0 +1,575 @@
+@media screen and (max-width: 1700px) {
+
+	#homeContBoxThree .boxContent {
+		padding-left: 0;
+	}
+
+	.swiper-slide-active {
+		// padding-top: 175px!important;
+		// background-size: 60%!important;
+	}
+
+	#homeContBoxThree .sectionMiddle {
+		min-height: 594px;
+	}
+
+	// .contHalf {
+	// 	width: 35%;
+	// }
+
+	#homeContBoxThree .swiper-pagination {
+		left: 62.7%;
+		margin-top: 10px;
+	}
+
+	.page-template-page-contact .supportCont .suppText p:last-of-type {
+		max-height: 200px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+
+	#homeContBoxThree .boxContent {
+		padding-left: 0;
+		margin-left: -185px;
+	}
+
+	#homeContBoxThree .swiper-pagination {
+		left: 62.7%;
+		margin-top: 10px;
+	}
+
+	.introCont {
+		width: 30%;
+	}
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.serviceImage img,
+	.page-template-page-support .supportCont .suppImg .suppinfoico img,
+	.page-template-page-products-pantheon .kvalitetaIntro .kvalitetaIntroSection img,
+	.page-template-page-products-pantheon .kvalitetaPrograms .kvalitetaProgramSection img {
+		width: auto;
+		height: auto;
+	}
+
+	.boxFull,
+	.wrapper {
+		padding-left: 15px!important;
+		padding-right: 15px!important;
+	}
+
+	// .entryHeader {
+	// 	margin: 0 15px;
+	// }
+
+	#homeContBoxOne {
+		background-size: 70%!important;
+		min-height: 425px;
+	}
+
+	.page-template-page-nas-tim .supportCont .aboutInfoPart .memberInfoContent {
+		width: 85%;
+	}
+
+	.supportCont {
+		margin: 0 15px;
+		width: 97.5%;
+	}
+
+	.suppImg {
+		width: 100%;
+	}
+
+	.page-template-page-novosti .aboutNews .newsPosts:nth-of-type(odd) {
+		width: calc(50% - 30px);
+	}
+
+	.page-template-page-novosti .aboutNews .newsPosts:nth-of-type(2n) {
+		width: 50%;
+	}
+
+	.introCont h1 {
+		font-size: 3rem;
+	}
+
+	.page-template-page-support .supportCont .suppText {
+		width: 45%;
+	}
+
+	.page-template-page-support .supportCont .suppImg {
+		width: 50%;
+	}
+
+	.page-template-page-products-pantheon .kvalitetaPrograms .kvalitetaProgramSection {
+		width: 50%;
+		min-height: 200px;
+	}
+
+	.page-template-page-products-pantheon .kvalitetaPrograms .kvalitetaProgramSection:nth-of-type(2n) {
+		padding-right: 0;
+		padding-left: 80px;
+	}
+
+	.page-template-page-products-datalab .datalabContent .datalabContentLeft {
+	    width: calc(100% - 450px);
+	    margin-right: 15px;
+	}
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 960px) {
+
+	.menumobile {
+	  	background: rgba(0, 0, 0, 0.8);
+	  	position: fixed;
+	  	width: 250px;
+	  	height: 100%;
+	  	top: 0;
+	  	right: 0;
+	  	z-index: 1000;
+	  	height: 100%;
+	  	overflow-y: scroll;
+	}
+
+	.menumobile a {
+	  	display: block;
+	  	color: #fff;
+	  	font-size: 1.1em;
+	  	font-weight: 300;
+	}
+
+	.menumobile a:hover {
+	  	background: rgba(0, 0, 0, 0.6);
+	}
+
+	.menumobile a {
+	  	text-decoration:none;
+	  	padding: 1em;
+	}
+
+	.menumobile {
+	  	right: 0px;
+	}
+
+	.menumobile,.menuoff,.buttonmove,.menutoggle  {
+	  	-webkit-transition: all 0.3s ease;
+	  	-moz-transition: all 0.3s ease;
+	  	transition: all 0.3s ease;
+	}
+
+	.menuoff{
+	  margin-right: -250px;
+	}
+
+	.menutoggle {
+		display: initial;
+	  	right: 70px;
+	  	top: 25px;
+	  	position: absolute;
+	  	cursor: pointer;
+	}
+
+	.menutoggle:before {
+	  	content: "";
+	  	position: absolute;
+	  	left: 0;
+	  	width: 2.5em;
+	  	height: 0.25em;
+	  	border-top: 0.875em double #47a951;
+	  	border-bottom: 0.335em solid #47a951;
+	  	z-index: 100000;
+	}
+
+	.buttonmove{
+	  	position: absolute;
+	  	margin-right: 165px;
+	  	z-index: 99999999999;
+	}
+
+	.mainMenu .menu li.menu-item-has-children::after {
+	    position: absolute;
+	    top: 27px;
+	    left: 40px;
+	}
+
+	.floatLFull.supportCont {
+		width: calc(100% - 30px);
+	}
+
+	.menu-main-menu-container {
+		width: 100%;
+	}
+
+	.mainMenu .menu li {
+		width: 100%;
+		padding-left: 0;
+		text-align: center;
+		position: relative
+	}
+
+	.mainMenu .menu li a {
+		width: 100%;
+   	 	display: block;
+    	float: right;
+	}
+
+	.mainMenu .homeLink {
+		display: block;
+		text-align: center;
+		float: none;
+	}
+
+	.langLog p {
+		margin-right: 30px;
+	}
+
+	.langLog .contHalf {
+		width: auto;
+		margin-right: 60px;
+	}
+
+	.langLog .contHalf:last-of-type {
+		margin-right: 0;
+	}
+
+	.page-template-page-opce-informacije .supportCont .aboutInfoPart {
+		width: 50%;
+	}
+
+	.aboutInfoPart:nth-of-type(1),
+	.aboutInfoPart:nth-of-type(2) {
+		margin-bottom: 40px;
+	}
+
+	#homeContBoxLogos .contHalf {
+		width: 40%;
+	}
+
+	.introCont h1 {
+		font-size: 3.35rem;
+	}
+
+	.page-template-page-products-pantheon .productChildIntroCont .productChildContent .productChildContentImage {
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.page-template-page-products-pantheon .productChildIntroCont .productChildContent .productChildContentText {
+		max-width: 100%;
+	}
+
+	.page-template-page-nas-tim .supportCont .aboutInfoPart .memberInfoContent {
+		width: 75%;
+	}
+
+	.page-template-page-novosti .aboutNews .smallNews,
+	.page-template-page-novosti .aboutNews .smallNews:nth-of-type(2n) {
+		width: calc(50% - 15px);
+		margin-right: 0;
+		max-width: none;
+	}
+
+	.page-template-page-novosti .aboutNews .smallNews:nth-of-type(odd) {
+		margin-right: 30px!important;
+	}
+
+	.page-template-page-support .supportCont .suppImg .suppinfotxt {
+		padding-left: 10px;
+	}
+
+	.dataTables_wrapper {
+		overflow-x: auto;
+	}
+
+	// .page-template-page-products-datalab .datalabContent .datalabContentRight {
+	// 	width: 100%;
+	// 	max-width: 100%;
+	// 	float: left;
+	// }
+
+
+
+}
+
+
+
+@media screen and (max-width: 760px) {
+
+	.logoSearch .logo img {
+		display: none;
+	}
+
+	.logoSearch .search {
+		width: 100%;
+		float: left;
+	}
+
+	.langLog .contHalf {
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+
+	.buttonmove {
+		margin-right: 135px;
+	}
+
+	.page-template-page-opce-informacije .supportCont .aboutInfoPart {
+		width: 40%;
+	}
+
+	 #homeContBoxOne {
+		background-size: contain!important;
+		background-position: center bottom 20px!important;
+	}
+
+	#homeContBoxOne .wrapper .introCont {
+		width: 100%
+	}
+
+	#homeContBoxOne .boxContentSection {
+		padding-top: 0!important;
+	}
+
+	.supportCont .aboutInfoPart {
+		padding: 30px 0;
+	}
+
+	.memberInfoImage {
+		margin: 0 0 20px 50px;
+	}
+
+	.page-template-page-services .servicesSection .serviceItem {
+		width: 47.5%;
+	}
+
+	.page-template-page-services .servicesSection .serviceItem:nth-child(3n) {
+		margin-right: 5%;
+	}
+
+	.page-template-page-services .servicesSection .serviceItem:nth-of-type(even) {
+		margin-right: 0;
+	}
+
+	.page-template-page-support .supportCont .suppText {
+		width: 100%;
+	}
+
+	.page-template-page-support .supportCont .suppImg {
+		width: 100%;
+	}
+
+	.page-template-page-contact .supportCont .suppText,
+	.page-template-page-contact .supportCont .suppImg {
+		width: 100%;
+		float: left;
+	}
+
+	.kvalitetaIntroSection {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.kvalitetaIntroSection:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.page-template-page-products-pantheon .kvalitetaContent .kvalitetaContentSection {
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.page-template-page-products-pantheon .kvalitetaPrograms .kvalitetaProgramSection {
+		padding-right: 40px;
+		width: 50%;
+		min-height: 250px;
+	}
+
+	.page-template-page-products-pantheon .kvalitetaPrograms .kvalitetaProgramSection:nth-of-type(2n) {
+		padding-left: 0;
+		width: 50%;
+	}
+
+	.page-template-page-products-pantheon .kvalitetaPrograms .kvalitetaProgramSection img {
+		width: 100%;
+	}
+
+	.page-template-page-products-pantheon .speciSection .speciText {
+		width: 100%;
+	}
+
+	.page-template-page-products-pantheon .supportSection .supportContent {
+		padding: 50px 10px 0;
+		float: left;
+		width: 100%;
+	}
+
+	.page-template-page-products-pantheon .productSubMenu .menu li {
+		margin: 0 25px 10px 0;
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+	.page-template-page-opce-informacije .supportCont .aboutInfoPart {
+		width: 100%;
+		margin-bottom: 40px;
+
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+	.langLog .contHalf {
+		margin-bottom: 20px;
+	}
+
+	.langLog p {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	.langLog p span:first-of-type {
+		margin-right: 10px;
+	}
+
+	// .floatLFull {
+	// 	width: 80%;
+	// }
+
+	#homeContBoxLogos .contHalf {
+		width: 100%;
+	}
+
+	#homeContBoxLogos .contHalf:first-of-type {
+		margin-bottom: 50px;
+	}
+
+	.page-template-page-o-nama .aboutChildPages .aboutChildPage {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	#homeContBoxOne {
+		min-height: 350px;
+		margin-top: 20px;
+	}
+
+	.page-template-page-nas-tim .supportCont .aboutInfoPart .memberInfoImage {
+		margin-left: 25px;
+	}
+
+	.page-template-page-nas-tim .supportCont .aboutInfoPart .memberInfoContent {
+		width: 100%;
+		padding-left: 25px;
+	}
+
+	.page-template-page-novosti .aboutNews .newsPosts,
+	.page-template-page-novosti .aboutNews .newsPosts:nth-of-type(odd),
+	.page-template-page-novosti .aboutNews .newsPosts:nth-of-type(2n) {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.page-template-page-novosti .aboutNews .smallNews,
+	.page-template-page-novosti .aboutNews .smallNews:nth-of-type(2n) {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+		max-width: none;
+	}
+
+	.page-template-page-services .servicesSection .serviceItem {
+		width: 100%;
+	}
+
+	.page-template-page-services .servicesSection .serviceItem:nth-child(3n),
+	.page-template-page-services .servicesSection .serviceItem:nth-of-type(even) {
+		margin-right: 0;
+	}
+
+	.page-template-page-services .servicesSection {
+		padding: 130px 0 0 0;
+	}
+
+	.page-template-page-support .supportCont .suppImg .suppinfoico {
+		width: 50px;
+		height: 50px;
+	}
+
+	.page-template-page-support .supportCont .suppImg .suppinfotxt span,
+	.page-template-page-support .supportCont .suppImg .suppinfotxt span:first-of-type {
+		padding: 0 0 12.5px 0;
+		font-size: 1rem;
+	}
+
+	.page-template-page-support .supportCont .suppImg .suppinfotxt {
+		padding-left: 7.5px;
+		max-width: 200px;
+	}
+
+
+
+	.page-template-page-products-pantheon .kvalitetaPrograms .kvalitetaProgramSection {
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.page-template-page-products-pantheon .speciSection .speciText {
+		max-width: 100%;
+		float: left;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

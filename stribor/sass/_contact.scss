@@ -1,0 +1,166 @@
+.contact-us-wrap {
+	margin-top: 30px;
+	padding: 60px 0 100px 0;
+	background-color: #f7f7f7;;
+}
+
+.contact-content-wrap {
+	margin-top: 40px;
+}
+
+.contact-content-wrap .contact-info {
+	margin-top: 20px;
+	float: left;
+	width: 50%;
+	margin-right: 2%;
+}
+
+.contact-content-wrap .contact-info {
+	text-align: left;
+}
+
+.contact-content-wrap .contact-info ul {
+	margin-bottom: 70px;
+}
+
+.contact-content-wrap .contact-info h4 {
+	font-size: 24px;
+	margin-bottom: 60px;
+}
+
+.contact-content-wrap .contact-info ul:last-of-type {
+	margin-bottom: 0;
+}
+
+.contact-content-wrap .contact-info .kontakt-info-text {
+	display: block;
+	width: 92%;
+	float: left
+}
+
+.contact-content-wrap .contact-info .kontakt-info-text p {
+	font-size: 18px;
+}
+
+.contact-content-wrap .contact-info .kontakt-info-image {
+	width: 8%;
+	float: left
+}
+
+.contact-content-wrap .contact-form {
+	float: left;
+	width: 48%;
+}
+
+.form-full {
+	float: left;
+	display: block;
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+.contact-form .form-full:nth-child(8) {
+	position: relative;
+	padding-bottom: 0;
+	width: 240px;
+}
+
+.contact-form input,textarea, select,
+.cart-form input, textarea, select {	
+	width: 100%;
+	height: 55px;
+	color: #878787;
+	background-color: #fff;
+	border-style: solid;
+	border: 1px solid #e1e1e1; 
+	font-size: 16px;
+	padding-left: 4%;
+}
+
+.contact-form a.selectBox {
+	border-radius: 1px!important;
+	background-color: #FFF!important;
+	color: #f52830;
+}
+
+.contact-form input:focus,textarea:focus, select:focus,
+.cart-form input:focus,textarea:focus, select:focus {
+	outline: none;
+}
+
+.contact-form textarea,
+.cart-form textarea {
+	font-family: 'Arimo'!important;
+	height: 210px;
+	resize: none;
+	padding-top: 4%;
+}
+
+.contact-form select {
+	color: #f52830;
+}
+
+.contact-form p,
+.cart-form p {
+	text-align: left;
+	padding-bottom: 20px;
+	clear: both;
+}
+
+.contact-form .wpcf7-validation-errors {
+	display: inline-block!important;
+	border: 2px solid #f52830;
+}
+
+.submit {
+	position: relative;
+	width: 100%;
+    padding: 0!important;
+    border: 0;
+    border-radius: 50px;
+    border-style: hidden!important;
+    background-color: #f52830!important;
+    color: #fff!important;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Arimo'!important;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.submit:hover {
+	background-color: #febe10!important;
+}
+
+span.wpcf7-not-valid-tip {
+	margin-top: 10px;
+}
+
+img.ajax-loader {
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	right: 0;
+}
+
+.google-map-wrap {
+	margin-top: 30px;
+}
+
+.acf-map {
+	height: 590px;
+	margin-top: 30px;
+}
+
+.gmnoprint,
+.gm-svpc {
+	display: none;
+}
+
+.wpcf7-mail-sent-ok {
+	float: left;
+}

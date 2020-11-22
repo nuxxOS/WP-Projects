@@ -1,0 +1,1400 @@
+@import url("fonts/fonts.css");
+
+
+
+@font-face {
+    font-family: 'TradeGothicW01-BoldCn20';
+	src: url('TradeGothicW01-BoldCn20.eot');
+	src: url('TradeGothicW01-BoldCn20.eot?#iefix') format('embedded-opentype'),
+		url('TradeGothicW01-BoldCn20.woff') format('woff'),
+		url('TradeGothicW01-BoldCn20.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+
+  	font-family: 'TradeGothic CondEighteen';
+	src: url('TradeGothic-Regular3.eot');
+	src: url('TradeGothic-Regular3.eot?#iefix') format('embedded-opentype'),
+		url('TradeGothic-Regular3.woff') format('woff'),
+		url('TradeGothic-Regular3.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: 'TradeGothic CondEighteen';
+}
+
+
+/* FONT STYLE */
+
+h1 {
+    font-weight: bold;
+    font-size: 70px;
+    font-family: 'TradeGothicW01-BoldCn20';
+}
+
+h2 {
+	font-size: 55px;
+	font-family: 'TradeGothicW01-BoldCn20';
+}
+
+h3 {
+	font-size: 45px;
+	font-family: 'TradeGothicW01-BoldCn20';
+}
+
+h4{
+	font-size: 30px;
+	font-family: 'TradeGothicW01-BoldCn20';
+}
+
+h5{
+	font-size: 24px;
+	font-family: 'TradeGothicW01-BoldCn20';
+}
+
+
+p {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+input:focus,
+button:focus {
+	outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+/* FONT STYLE DONE */
+
+
+
+
+/* GENERIC STYLES */
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.white {
+    color: #fff;
+}
+
+.dark-yellow {
+	color: #f3ca01;
+}
+
+.yellow {
+	color: #f8ce01;
+}
+
+.dirt-yellow {
+	color: #dae00a;
+}
+
+.orange {
+	color: #fa8116;
+}
+
+.red {
+	color: #d52920;
+}
+
+.blue {
+	color: #009de1;
+}
+
+.green {
+	color: #4aa83a;
+}
+
+.gray {
+	color: #4d4b4b;
+}
+
+
+/* ACTIVITY COLOR STYLES */
+
+
+.run-walk-color {
+	color: #f19836;
+}
+
+.paddle-sail-color {
+	color: #2d3493;
+}
+
+.classes-color {
+	color: #d4e335;
+}
+
+.swim-color {
+	color: #00aced;
+}
+
+.cycle-color {
+	color: #681b72;
+}
+
+.gym-color {
+	color: #dc382e;
+}
+
+.ski-color {
+	color: #e4008c;
+}
+
+.racket-sports-color {
+	color: #4cb24c;
+}
+
+
+
+/* END ACTIVITY COLOR STYLES */
+
+
+
+
+.badge-dark-yellow {
+	background-color: #c9a901;
+}
+
+.badge-light-yellow {
+	background-color: #dab90a;
+}
+
+.bg-gray {
+	background-color: #575656!important;
+}
+
+.bg-lightgray {
+	background-color: #6d6c6c!important;
+}
+
+.bg-black {
+	background-color: #1d1d1e;
+}
+
+.bg-yellow {
+	background-color: #f8ce01;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+/* END GENERIC STYLES */
+
+
+
+
+/* CONTAINER STYLE */
+
+.container {
+	width: auto;
+	max-width: 810px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.container-profile {
+	width: auto;
+	max-width: 750px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.container-content {
+	width: auto;
+	max-width: 690px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+
+/* END OF CONTAINER STYLE */
+
+
+
+
+
+/*  ==============================================
+	======= REGISTER AND LOGIN PAGE STYLES ======= 
+	==============================================	 */
+
+
+header {
+	height: 95px;
+}
+.logo {
+	height: 70px;
+	float: left;
+	width: 18%;
+	margin: 25px 0 0 20px;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.medal,
+.header-menu-img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 999;
+	width: 30.86%
+}
+
+.header-menu {
+	float: left;
+	line-height: 95px;
+	margin-left: 45px;
+}
+
+.header-menu li {
+	display: inline-block;
+	float: left;
+	padding-right: 25px;
+}
+
+.header-menu li:last-of-type {
+	padding-right: 0px;
+}
+
+.header-menu li a {
+	display: block;
+	color: #fff;
+	font-size: 18px;
+}
+
+
+.register-wrap,
+.login-wrap {
+	padding: 45px 0 60px 0;
+}
+
+.info-wrap {
+	margin-top: 30px;
+	text-align: left;
+}
+
+.form-wrap {
+	float: left;
+	width: 53%;
+	border-right: 5px solid #fff;
+}
+
+.form-wrap ::-webkit-input-placeholder {
+	color: #fff;
+}
+
+.form {
+	width: 95%;
+	margin-top: 10px;
+	padding-right: 5%;
+}
+
+.form input,
+#login-form.login input {
+	position: relative;
+	width: 100%;
+	line-height: 65px;
+	color: #fff;
+	font-size: 20px;
+	background-color: transparent;
+	margin-bottom: 15px;
+	padding: 0 0 0 21%;
+	border: 2px solid #fff;
+	box-sizing: border-box;
+}
+
+.form input.sign-up-button {
+	width: 100%;
+	margin: 15px 0 20px;
+	background-color: #4cb24c;
+	border: none;
+	padding: 0;
+}
+
+.form input:focus,
+#login-form input:focus {
+	outline: none;
+}
+
+.icon-human {
+	background: url("images/form-icon.png") no-repeat top 20px left 20px;
+}
+
+.icon-lock {
+	background: url("images/form-icon2.png") no-repeat top 20px left 20px;
+}
+
+.icon-facebook {
+	background: url("images/facebook.png") no-repeat top 12px left 25px;
+}
+
+.social-wrap {
+	width: 46.2%;
+	float: left;
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+.social {
+	width: 95%;
+	padding-left: 5%;
+}
+
+.facebook {
+	display: block;
+    line-height: 65px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #435697;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#login-form .social-login input.login-button,
+.login-button {
+	display: block;
+    line-height: 65px;
+    margin-top: 10px;
+    background-color: #f8ce01;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    font-size: 18px;
+}
+
+.social-fb {
+	margin-bottom: 45px;
+}
+
+#login-form.container-content {
+	max-width: 425px;
+}
+
+.login {
+	margin-top: 50px;
+}
+
+#login-form.login .social-fb {
+	margin-bottom: 20px;
+}
+
+.login-button,
+.social-fb {
+	font-size: 20px;
+}
+
+.login-text {
+	margin: 40px 0 15px 0;
+}
+
+.login-text p {
+	font-size: 16px;
+}
+
+
+/*  ===================================================
+	====== END OF REGISTER AND LOGIN PAGE STYLES ====== 
+	===================================================	 */
+
+
+
+
+
+
+/*  =======================================
+	========= PROFILE PAGE STYLES ========= 
+	=======================================	 */
+
+
+.profile-banner-wrap {
+	padding: 70px 0 25px 0;
+	margin-top: 25px;
+}
+
+.profile-banner {
+	text-align: left;
+}
+
+.profiler-banner h5 {
+	font-size: 50px;
+}
+
+.profile-options {
+	padding: 35px 0 30px;
+	text-align: left;
+}
+
+select.activity-dropdown {
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 25px;
+    -moz-padding-start: 25px;
+    background: url("images/select-arrow.png") no-repeat top 50% right 20px;
+	float: left;
+	width: 52.5%;
+	margin-top: 15px;
+	color: #fff;
+	height: 65px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 1px;
+}
+
+select.activity-dropdown:focus {
+	outline: none;
+}
+
+.fitness-wrap {
+	padding: 25px 0 35px 0;
+}
+
+.fitness {
+	text-align: left;
+}
+
+.radio {
+	float: left;
+	margin-top: 30px;
+}
+
+.radio input,
+.activity input {
+	display: none;
+}
+
+.radio label {
+	display: inline-block;
+	font-size: 28px;
+	text-transform: uppercase;
+	position: relative;
+	display: block;
+	padding-left: 45px;
+	cursor: pointer;
+	float: left;
+	margin-left: 35px;
+	color: #2c2b2b;
+    font-family: "TradeGothicW01-BoldCn20";
+
+}
+
+.radio label:first-of-type {
+	margin-left: 0;
+}
+
+.radio label:before {
+	content: "";
+ 
+    width: 30px;
+    height: 30px;
+ 
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.radio input[type=radio]:checked + label:after {
+	content: "";
+	position: absolute;
+ 
+    top: 5px;
+    left: 8px;
+
+    width: 15px;
+    height: 15px;
+
+    background-color: #f3ca01;
+    border-radius: 50px;
+    -webkit-box-shadow: inset -5px -5px 50px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset -5px -5px 50px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 0.5px 0px 8px 1px rgba(0,0,0,0.4);
+}
+
+.radio input[type=radio]:checked + label:before {
+	-webkit-box-shadow: inset -5px -5px 50px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset -5px -5px 50px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 0px 0px 8px 3px rgba(0,0,0,0.3);
+}
+
+.radio input[type=radio]:checked + label {
+	color: #f3ca01;
+}
+
+.activities {
+	padding: 40px 0 30px;
+	text-align: left;
+}
+
+.small-subtitle {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.activity {
+	margin-top: 35px;
+}
+
+.activity .checkbox {
+	float: left;
+	width: 22%;
+	height: 205px;
+	margin-right: 4%;
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.activity .checkbox:nth-child(4n) {
+	margin-right: 0;
+}
+
+.activity label {
+	display: block;
+	font-size: 24px;
+	text-transform: uppercase;
+	position: relative;
+	cursor: pointer;
+	color: #fff;
+	margin-top: 189px;
+	max-width: 165px;
+	text-align: center;
+}
+
+.activity .checkbox label:before {
+	content: "";
+	width: 165px;
+	height: 165px;
+	position: absolute;
+	bottom: 41px;
+	left: 0;
+}
+
+.activity .run-walk label:before {
+	background: url("images/run-walk.png") no-repeat center center;	
+}
+
+.activity .paddle-sail label:before {
+	background: url("images/paddle-sail.png") no-repeat center center;	
+}
+
+.activity .classes label:before {
+	background: url("images/classes.png") no-repeat center center;
+}
+
+.activity .swim label:before {
+	background: url("images/swim.png") no-repeat center center;	
+}
+
+.activity .cycle label:before {
+	background: url("images/cycle.png") no-repeat center center;
+}
+
+.activity .gym label:before {
+	background: url("images/gym.png") no-repeat center center;	
+}
+
+.activity .ski label:before {
+	background: url("images/ski.png") no-repeat center center;
+}
+
+.activity .racket-sports label:before {
+	background: url("images/racket-sports.png") no-repeat center center;	
+}
+
+.activity .checkbox input[type=checkbox]:checked + label:after {
+	content: "";
+	width: 165px;
+	height: 165px;
+	position: absolute;
+	bottom: 41px;
+	left: 0;
+	background: rgba(20, 20, 20, 0.3) url("images/checkmark.png") no-repeat center center;
+}
+
+.submit-wrap {
+	padding: 35px 0;
+}
+
+.submit-button {
+	font-size: 20px;
+	line-height: 65px;
+	background-color: #f8ce01;
+	width: 52%;
+	border: 0;
+	padding: 0;
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+}
+
+.submit-button:focus {
+	outline: none;
+}
+
+
+/*  ==========================================
+	======= END OF PROFILE PAGE STYLES ======= 
+	==========================================	 */
+
+
+
+
+
+/*  ==========================================
+	=========== LOGTIME PAGE STYLES ========== 
+	==========================================	 */
+
+
+
+.page-wrapper {
+	padding-bottom: 320px;
+}
+
+.logtime-wrapper {
+	margin-top: 25px;
+	padding-top: 20px;
+}
+
+.signout-button {
+	position: absolute;
+	display: block;
+	font-size: 16px;
+	top: 15px;
+	right: 20px;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.signout-button:focus {
+	outline: none;
+}
+
+.mfp-wrap {
+	top: 0!important;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(20, 20, 20, 0.3);
+	z-index: 99;
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.time-input {
+	width: 100%;
+	height: 90px;
+	position: relative;
+}
+
+.time-input input {
+	width: 100%;
+	display: block;
+}
+
+.time-input .minutes {
+	width: 190px;
+	line-height: 88px;
+	box-sizing: border-box;
+	padding: 0 40px 0 0;
+	border: 1px solid #6d6c6c;
+	float: left;
+	margin-right: 15px;
+	font-size: 55px;
+	text-align: right;
+}
+
+.popup-img {
+	float: left;
+	margin-right: 10px;
+	width: 90px;
+	height: 90px;
+}
+
+.popup-img img {
+	width: 100%;
+	height: auto;
+}
+
+.time-input span {
+	position: absolute;
+	bottom: 10px;
+	right: 40px;
+	font-size: 20px;
+}
+
+.more-activities {
+	width: 100%;
+    height: 40px;
+    margin-top: 25px;
+    text-align: left;
+	display: block;
+}
+
+.more-activities p {
+	width: 100%;
+    padding: 0;
+    border: 0;
+    margin-left: 35px;
+    line-height: 35px;
+    background: transparent;
+    font-size: 20px;
+}
+
+.submit-popup {
+    padding: 0;
+    border: 0;
+    line-height: 50px;
+    width: 100%;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#cross {
+   width: 35px;
+   height: 35px;
+   position: relative;
+   float: left;
+}
+
+#cross:before, #cross:after {
+  content: "";
+  position: absolute;
+  background-color: #575656;
+}
+
+#cross:before {
+	left: 57%;
+	width: 17%;
+	margin-left: -15%;
+	height: 100%;
+
+}
+
+#cross:after {
+    top: 55%;
+    left: 0;
+    height: 17%;
+    margin-top: -15%;
+    width: 100%;
+}
+
+button.custom-close {
+	display: block;
+	padding: 0;
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+#your-time.white-popup {
+	max-width: 480px;
+	padding: 0;
+}
+
+.total-time {
+	margin: 0 auto 15px auto;
+	padding-top: 20px;
+	max-width: 440px;
+}
+
+.activity-title {
+	color: #4d4b4b;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.activity-popup-single {
+	margin: 15px 8px 0 0;
+	width: 48%;
+	display: block;
+	float: left;
+}
+
+.activity-popup-single .popup-img {
+	width: 70px;
+	height: 70px;
+}
+
+.popup-text {
+	float: left;
+	width: 62%;
+	margin-top: 6px;
+}
+
+.popup-text input {
+	padding: 0;
+	border: 0;
+}
+
+.popup-text p {
+	display: block;
+	font-size: 27px;
+}
+
+.mins-big {
+	font-size: 40px;
+}
+
+.total-text {
+	width: 48%;
+	float: left;
+	margin: 12.5px 0;
+}
+
+.total-text p {
+	font-size: 30px;
+}
+
+.total-mins p, .total-mins h5 {
+	display: inline-block;
+}
+
+.total-active input {
+	float: right;
+	width: 34%;
+	margin-right: 15px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 17.5px;
+}
+
+
+
+
+
+/*  =========================================
+	======= END OF LOGTIME PAGE STYLES ====== 
+	=========================================  */
+
+
+
+
+
+/*  =========================================
+	=========== STATS PAGE STYLES ===========
+	=========================================  */
+
+
+.personal-stats {
+	padding: 15px 0;
+	margin-top: 25px;
+}
+
+.date {
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 22px;
+	font-size: 20px;
+}
+
+.total-minutes {
+	padding: 35px 0 30px 45px;
+	box-sizing: border-box;
+	float: left;
+	width: 44%;
+}
+
+.most-minutes {
+	padding: 35px 0 30px 45px;
+	box-sizing: border-box;
+	float: right;
+	width: 56%;
+}
+
+
+.total-minutes h2 span {
+	font-size: 36px;
+}
+
+.activity-breakdown-wrap {
+	background-color: #e2c11d;
+	padding: 45px 0;
+}
+
+.activity-breakdown-wrap .container-profile {
+	clear: both;
+}
+
+.activity-breakdown-wrap h2 {
+	float: left;
+	font-size: 50px;
+}
+
+.activity-breakdown-wrap span.absolute {
+	position: absolute;
+	right: 0;
+	top: 30px;
+	font-size: 20px;
+}
+
+.breakdown-wrap {
+	margin-top: 10px;
+	background-color: #3e3e3e;
+}
+
+.breakdown {
+	padding: 30px 0 35px;
+	display: block;
+	width: 100%;
+	text-align: left;
+}
+
+.breakdown-row {
+	width: 100%;
+	float: left;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.breakdown-row:last-of-type {
+	margin-bottom: 0;
+}
+
+.breakdown-info {
+	display: block;;
+	width: 40%;
+	float: left;
+}
+
+.breakdown-chart-wrap {
+	display: block;;
+	width: 60%;
+	float: left;
+}
+
+.chart {
+	height: 70px;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 1;	
+}
+
+.run-walk-arrow {
+	background: rgba(241, 152, 54, 1) url("images/orange-arrow.png") center center repeat-x;
+}
+
+.paddle-sail-arrow {
+	background: rgba(45, 52, 147, 1) url("images/blue-arrow.png") center center repeat-x;
+}
+
+.classes-arrow {
+	background: rgba(212, 227, 53, 1) url("images/yellow-arrow.png") center center repeat-x;
+}
+
+.swim-arrow {
+	background: rgba(0, 172, 237, 1) url("images/lightblue-arrow.png") center center repeat-x;
+}
+
+.cycle-arrow {
+	background: rgba(104, 27, 114, 1) url("images/purple-arrow.png") center center repeat-x;
+}
+
+.gym-arrow {
+	background: rgba(213, 41, 32, 1) url("images/red-arrow.png") center center repeat-x;
+}
+
+.ski-arrow {
+	background: rgba(228, 0, 140, 1) url("images/pink-arrow.png") center center repeat-x;
+}
+
+.racket-sports-arrow {
+	background: rgba(76, 178, 76, 1) url("images/green-arrow.png") center center repeat-x;
+}
+
+.activity-image {
+	width: 25%;
+	height: 70px;
+	float: left;
+}
+
+.activity-image img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.activity-minutes {
+	font-size: 25px
+}
+
+.activity-text {
+	float: left;
+	margin-left: 10px;
+	width: 71.38%;
+	height: 70px;
+	margin-top: -2px;
+	line-height: 35px;
+}
+
+.activity-text h5 {
+	font-size: 40px;
+}
+
+.leaderboard-wrap {
+	padding: 50px 0;
+}
+
+.leaderboard {
+	position: relative;
+	width: 100%;
+	margin-top: 5px;
+}
+
+.leaderboard h5 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+ul.tabs {
+	float: right;
+}
+
+ul.tabs li {
+	display: inline-block;
+	list-style: none;
+	float: left;
+	line-height: 58px;
+	width: 168px;
+	margin-right: -50px;
+	position: relative;
+}
+
+ul.tabs li span {
+	display: block;
+	width: 100%;
+	color: #f8ce01;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.disabled {
+	display: none;
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+ul.tabs li.link-active span {
+	color: #575656;
+}
+
+ul.tabs li:last-of-type {
+	margin-right: 5px;
+}
+
+.link-current {
+	background: url("images/black-bg.png") no-repeat center center;
+}
+
+.link-active {
+	background: url("images/white-bg.png") no-repeat center center;
+	z-index: 99;
+}
+
+ul.ranking li {
+	color: #fff;
+	line-height: 65px;
+	text-align: left;
+	padding-left: 80px;
+	clear: both;
+	font-size: 20px;
+}
+
+ul.ranking li:first-of-type {
+	background: url("images/trophy.png") no-repeat left 20px top 15px;
+}
+
+ul.ranking li:nth-of-type(2),
+ul.ranking li:nth-of-type(3) {
+	background: url("images/ladder-medal.png") no-repeat left 20px top 15px;
+}
+
+ul.ranking li img {
+	display: block;
+	float: left;
+	width: auto;
+}
+
+ul.ranking .ranking-time {
+	display: block;
+	float: right;
+	margin-right: 30px;
+}
+
+ul.ranking li span span {
+	font-size: 12px;
+	padding-left: 
+}
+
+button.see-more {
+	width: 100%;
+	text-align: center;
+	height: 65px;
+	padding: 0;
+	border: 0;
+	margin-top: 10px;
+	font-size: 30px;
+	cursor: pointer;
+	background-color: #3a3a3a;
+}
+
+button.see-more:focus {
+	outline: none;
+}
+
+
+.stat-disabled {
+	display: none;
+}
+
+.stat-active {
+	display: block;
+}
+
+.badge-title {
+	padding: 45px 0;
+}
+
+ul.badges li {
+	line-height: 115px;
+	font-size: 24px;
+	color: #fff;
+	text-align: left;
+	position: relative;
+}
+
+ul.badges li p:first-of-type{
+	font-size: 30px;
+}
+
+.badge-text {
+	display: inline-block;
+	vertical-align: middle;
+	width: 71.6%;
+}
+
+.border-circle {
+	border: 1px solid #f8ce01;
+	border-style: none;
+	border-radius: 50px;
+	padding: 45px;
+	margin: 0 20px 0 45px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.badge-list button.see-more {
+	margin-top: 0;
+}
+
+.badge-value {
+	float: right;
+	display: block;
+	clear: both;
+}
+
+
+.fact-title-wrap {
+	float: left;
+	line-height: 55px;
+	width: 30%;
+	background-color: #fff;
+	margin: 45px 20px 0 0;
+}
+
+.fact-title {
+	font-size: 36px;
+	text-align: center;
+	color: #575656;
+	text-transform: uppercase;
+}
+
+.fact-wrap {
+	float: left;
+	width: 66.5%;
+	padding: 40px 0;
+}
+
+.fact-wrap p {
+	font-size: 34px;
+	line-height: 36px;
+}
+
+.after-fact {
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+li.badge-yellow {
+	background-color: #c9a901;
+}
+
+li.badge-yellow:nth-of-type(2n) {
+	background-color: #dab90a;
+}
+
+
+
+/*  =========================================
+	======== END OF STATS PAGE STYLES =======
+	=========================================  */
+
+
+
+
+
+
+
+
+/*  =========================================
+	============ BADGE PAGE STYLES ==========
+	=========================================  */
+
+
+.badge-page-wrap {
+	background: linear-gradient(to left bottom, #575656 50%, #4c4b4b 50%);
+	padding: 70px 0 20px 0;
+	margin-top: 25px;
+}
+
+.badge-content {
+	margin-top: 25px;
+
+}
+
+.badge-image {
+	width: 295px;
+	height: 295px;
+	margin: 35px auto;
+	background-color: #fff;
+}
+
+.badge-image img {
+	width: 100%;
+	height: auto;
+}
+
+.badge-msg {
+	font-size: 36px;
+	line-height: 40px;
+	margin: 15px auto 25px auto;
+	display: block;
+	max-width: 500px;
+}
+
+.badge-button {
+	display: block;
+	width: 180px;
+	margin: 0 auto;
+    padding: 0;
+    border: 0;
+    line-height: 55px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+input#share {
+	margin: 10px auto 25px auto;
+	background-color: #167abf;
+}
+
+a#next {
+	background-color: #494848;
+}
+
+#after-content {
+	height: 220px;
+}
+
+a.selectBox {
+	background: url("images/select-arrow.png") no-repeat top 50% right 20px;
+}
+
+/*  =========================================
+	======== END OF BADGE PAGE STYLES =======
+	=========================================  */

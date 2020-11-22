@@ -1,0 +1,48 @@
+.usluge-page-wrap,
+.single-usluge-wrap {
+	margin-top: 30px;
+	padding-bottom: 150px;
+	background-color: #f7f7f7;
+}
+
+.usluge-page-wrap .usluge-list-wrap,
+.single-usluge-wrap .single-usluge-content-wrap {
+	padding-top: 60px
+}
+
+.usluge-page-wrap .usluge-list-wrap .usluge-list,
+.other-services-wrap .usluge-list {
+	margin-top: 30px;
+}
+
+.usluge-page-wrap .usluge-list-wrap .usluge-list .usluge-item,
+.other-services-wrap .usluge-list .usluge-item {
+	float: left;
+	width: calc(1200px / 3 - 20px);
+	margin: 0 30px 30px 0;
+}
+
+.usluge-page-wrap .usluge-list-wrap .usluge-list .usluge-item:nth-of-type(3n),
+.other-services-wrap .usluge-list .usluge-item:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+.usluge-page-wrap .usluge-list-wrap .usluge-list .usluge-item .usluge-title,
+.other-services-wrap .usluge-list .usluge-item .usluge-title {
+	line-height: 70px;
+	background-color: #FFF;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.usluge-page-wrap .usluge-list-wrap .usluge-list .usluge-item .usluge-title h5,
+.other-services-wrap .usluge-list .usluge-item .usluge-title h5 {
+	color: #000;
+}
+
+.single-usluge-wrap .single-usluge-content-wrap .usluge-content-image {
+	margin-top: 30px;
+}
+
+.single-usluge-wrap .single-usluge-content-wrap .usluge-content-text {
+	margin-bottom: 120px;
+}

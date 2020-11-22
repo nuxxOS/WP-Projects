@@ -1,0 +1,21 @@
+/*=================================
+=            VARIABLES            =
+=================================*/
+
+
+/*----------  Colors  ----------*/
+$main-color: #bc9b6a;
+$text-color: #333;
+$heading-color: #111;
+$link-color: $main-color;
+$link-hover-color: saturate($main-color, 20%);
+$link-visited-color: purple;
+
+/*----------  Fonts  ----------*/
+
+$base-font-family: 'Source Sans Pro', sans-serif;
+$base-font-size: 15px;
+$base-font-weight: 400;
+
+$heading-font-family: 'Source Sans Pro', sans-serif;
+$heading-font-weight: 700;

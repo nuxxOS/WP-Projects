@@ -1,0 +1,36 @@
+// Requirements
+// ============
+
+@import "susy";
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/general/reset";
+@import "compass/utilities/general/float"; 
+
+//alternative layout breakpoints
+
+$total-columns: 5;
+$tablet: 8;
+$computer: 55em 12; 
+
+$gutters : (
+    columns: 12,
+    gutters: 0.4,
+    output: float,
+    gutter-position: after,
+    global-box-sizing: border-box,
+);
+$offers : (
+    columns: 12,
+    gutters: 0.15,
+    output: float,
+    gutter-position: after,
+    global-box-sizing: border-box,
+);
+
+$susy: (
+  columns: 12,
+  gutters: 0,
+  output: float,
+  gutter-position: after,
+  global-box-sizing: border-box,
+);

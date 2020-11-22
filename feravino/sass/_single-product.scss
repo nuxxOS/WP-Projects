@@ -1,0 +1,65 @@
+/*======================================
+=            SINGLE PRODUCT            =
+======================================*/
+
+.product-info {
+	background: url('./images/wood-back.jpg') no-repeat center center;
+	height: 500px;
+	@include breakpoint(small) {
+		height: auto;
+		padding: 40px 0;
+		background-size: cover;
+	}
+	.product-content {
+		@include vertical-align();
+		@include breakpoint(small) {
+			top: initial !important;
+			transform: initial !important;
+		}
+		h1 {
+			color: $main-color;
+			@include font-size(3);
+			font-weight: 400;
+		}
+		ul {
+			margin-top: 65px;
+			li {
+				color: white;
+				position: relative;
+				@include font-size(1.8);
+				font-weight: 600;
+				margin-bottom: 20px;
+				line-height: 1;
+				&:before {
+				    content: "• ";
+				    color: $main-color;
+				    margin-right: 10px;
+				}
+			}
+		}
+	}
+}
+
+.awards {
+	padding: 100px 0 150px;
+	h1 {
+		@include font-size(3);
+		font-weight: 400;
+		text-align: center;
+		color: $main-color;
+		margin-bottom: 70px;
+	}
+	ul {
+		text-align: center;
+		li {
+			display: block;
+			@include font-size(1.8);
+			margin-bottom: 20px;
+			b {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+/*=====  End of SINGLE PRODUCT  ======*/

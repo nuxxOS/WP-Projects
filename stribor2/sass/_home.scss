@@ -1,0 +1,97 @@
+.products-wrap {
+	margin: 30px auto 100px;
+}
+
+.products-wrap .product-list,
+.reference-wrap .reference-list,
+.featured-video-wrap .featured-video {
+	margin-top: 30px;
+}
+
+.products-wrap .product-list .product-item {
+	float: left;
+	width: calc(100% / 5);
+	border: 1px solid #e1e1e1;
+	position: relative;
+	height: 350px;
+}
+
+.padding {
+	margin: 20px;
+}
+
+.products-wrap .product-list .product-item .product-title {
+	text-transform: uppercase;
+	display: inline-block;
+	width: 100%;
+	border-top: 1px solid #e1e1e1;
+	background-color: #f7f7f7;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.products-wrap .product-list .product-item .product-title h5 {
+	line-height: normal;
+	padding: 20px 0;
+}
+
+.reference-wrap .reference-list .reference-item {
+	float: left;
+	width: calc(100% / 5 - 22px);
+	margin-right: 27.5px;
+	height: auto;
+}
+
+.reference-wrap {
+	margin-bottom: 100px;
+}
+
+.reference-wrap .reference-list .reference-item:last-of-type {
+	margin-right: 0px;
+}
+
+.reference-wrap .reference-list .reference-item .reference-image {
+	width: 100%;
+	height: 260px;
+	border-bottom: 0px;
+}
+
+.reference-wrap .reference-list .reference-item .reference-image img {
+	border: 1px solid #e1e1e1;
+}
+
+
+.reference-wrap .reference-list .reference-item .reference-title {
+	line-height: 70px;
+	text-align: center;
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.reference-wrap .reference-list .reference-item .reference-title h5 {
+	color: #000;
+	font-size: 16px;
+}
+
+.featured-video-wrap .featured-video iframe {
+	width: 100%;
+	height: 775px;
+}
+
+.featured-video-wrap .featured-video a {
+	display: block;
+    position: absolut;
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: red;
+    z-index: 2;
+}
+
+.ytp-large-play-button.ytp-touch-device .ytp-icon-large-play-button {
+	opacity: 0;
+}
+

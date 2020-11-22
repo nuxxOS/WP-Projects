@@ -1,0 +1,140 @@
+.single-post {
+
+	#homeContBoxOne {
+		float: left;
+		min-height: 470px;
+	}// end of home cont box one ( global one )
+
+	.entryHeader {
+		clear: both;
+		text-align: center;
+
+		p,a {
+			font-size: rem(16px);
+			color: $mainWhite;
+			text-align: left;
+		}
+
+	}// end of entry header
+
+	.singleNewsPost {
+
+		padding: 100px 0;
+		border-bottom: 1px solid $lightBorder;
+
+		.singleNewsContent {
+			width: calc(100% - 420px);
+
+			span {
+
+				color: #a6a6a6;
+				font-size: .75rem;
+				font-weight: 700;
+				display: inline-block;
+				width: 100%;
+				padding-left: 20px;
+				margin: 30px 0;
+				position: relative;
+
+				    &::before {
+				    	content: "";
+				    	width: 12px;
+				    	height: 12px;
+				    	background: url(images/home-news-icon.png) no-repeat center center;
+				    	background-size: contain;
+				    	position: absolute;
+				    	left: 0;
+				    }
+
+			}
+
+			h2 {
+				font-size: rem(24px);
+				font-weight: 700;
+				border-bottom: 1px solid $lightBorder;
+				padding-bottom: 30px;
+			}
+
+			p {
+				margin: 30px 0;
+			}
+
+		}// end single news content
+
+		.singleNewsSidebar {
+			width: 360px;
+
+			.singleSideTitle {
+
+				h2 {
+					font-weight: 700;
+					font-size: rem(24px);
+					padding-bottom: 25px;
+					border-bottom: 1px solid $lightBorder;
+				}
+
+			}// end single side title
+
+			.singleSidebarPostItemList {
+
+				margin-bottom: 30px;
+				display: block;
+				float: left;
+
+				&:first-of-type {
+					margin-top: 30px;
+				}
+
+				.singleSidebarPostList {
+					
+					clear: both;
+					float: left;
+					background: $lightBg;
+
+					.singleSideImage {
+						float: left;
+					}
+
+					.singleSideText {
+						
+						padding: 20px;
+						float: left;
+						width: calc( 100% - 130px );
+
+						span {
+							color: #a6a6a6;
+						    font-size: .75rem;
+						    font-weight: 700;
+						    display: inline-block;
+						    width: 100%;
+						    padding-left: 20px;
+						    margin-bottom: 20px;
+						    position: relative;
+
+						    &::before {
+						    	content: "";
+						    	width: 12px;
+						    	height: 12px;
+						    	background: url(images/home-news-icon.png) no-repeat center center;
+						    	background-size: contain;
+						    	position: absolute;
+						    	left: 0;
+						    }
+							
+						}
+
+						p {
+							font-size: rem(16px);
+						}
+
+					}// end single side text
+
+				}// end single sidebar post list
+
+			}// end single sidebar post item list
+
+		}// end single news sidebar
+
+	}// end single news post
+
+}// end of page novosti

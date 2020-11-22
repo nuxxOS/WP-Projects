@@ -1,0 +1,312 @@
+.page-template-page-products-pantheon {
+
+	#homeContBoxOne {
+		float: left;
+		min-height: 470px;
+	}// end of home cont box one ( global one )
+
+	.entryHeader {
+		clear: both;
+		text-align: center;
+
+		p,a {
+			font-size: rem(16px);
+			color: $mainWhite;
+			text-align: left;
+		}
+
+		h2 {
+			font-size: rem(30px);
+		}
+
+	}// end of entry header
+
+	.productSubMenu {
+		background: $darkBlack;
+
+		.menu {
+
+			padding: 22px 0;
+
+			li {
+
+				display: inline-block;
+				width: auto;
+				margin-left: 50px;
+				
+
+				&:first-of-type {
+					margin-left: 0;
+				}
+
+				a {
+					color: $mainWhite;
+					opacity: 0.5;
+					font-weight: 700;
+					font-size: rem(14px);
+					text-transform: uppercase;
+					display: inline-block;
+					padding: 5px 0;
+					border-bottom: 2px solid transparent;
+
+					&:hover {
+						opacity: 1;
+						border-bottom: 2px solid $mainGreen;
+					}
+
+					&.activePage {
+						border-bottom: 2px solid $mainGreen;
+						opacity: 1;
+					}
+
+				}
+
+			}
+
+		}
+
+	}// end product submenu
+
+	.productChildIntroCont {
+
+		padding: 110px 0;
+		
+		.procudtChildIntroTitle {
+			font-size: rem(36px);
+			font-weight: 900;
+			text-transform: uppercase;
+			margin-bottom: 50px;
+		}
+
+		.productChildIntroContent p {
+			font-size: rem(18px);
+			line-height: 30px;
+			font-weight: 700;
+			border-bottom: 1px solid $lightBorder;
+			padding-bottom: 20px;
+			margin-bottom: 60px;
+		}
+
+		.productChildContent {
+
+			.productChildContentImage {
+				max-width: 450px;
+				float: left;
+			}
+
+			.productChildContentText {
+				max-width: calc(100% - 510px);
+				float: right;
+
+				p {
+
+					font-size: rem(16px);
+					font-weight: 400;
+					line-height: 30px;
+
+				}
+
+			}
+			
+		}
+
+	} // end product child intro content
+
+	.kvalitetaIntro {
+
+		padding: 70px 0;
+
+		.kvalitetaIntroSection {
+			
+			img {
+				float: left;
+				padding-right: 40px;
+				float: left;
+			}
+
+			p {
+				width: calc( 100% - 200px);
+				color: $mainWhite;
+				font-size: rem(16px);
+				line-height: 24px;
+				float: left;
+				padding-top: 20px;
+			}
+
+		}
+
+	} // end kvaliteta intro
+
+	.kvalitetaContent {
+
+		padding-top: 110px;
+
+		.fixBorder {
+			border-bottom: 1px solid $lightBorder;
+		}
+
+		.kvalitetaContentSection {
+
+			padding-right: 30px;
+			padding-bottom: 50px;
+
+			&:last-of-type {
+				padding-right: 0;
+			}
+
+			h2 {
+				font-size: rem(24px);
+				font-weight: 700;
+				color: $mainTypog;
+				border-bottom: 1px solid $lightBorder;
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+			}
+
+			p {
+				font-size: rem(14px);
+				line-height: 24px;
+			}
+
+		}
+
+	} // end kvaliteta content
+
+	.kvalitetaPrograms {
+
+		padding: 80px 0;
+
+		.kvalitetaProgramSection {
+			width: 25%;
+			padding-right: 80px;
+			min-height: 250px;
+
+			&:nth-child(4n) {
+				padding-right: 0;
+			}
+
+			img {
+				padding-bottom: 30px;
+			}
+
+			p {
+				font-size: rem(16px);
+				line-height: 24px;
+			}
+		}
+
+	}// end kvaliteta programs
+
+	.supportSection {
+
+		background-color: $lightBg;
+		min-height: 660px;
+
+		.supportContent {
+
+			padding: 170px 0 0 80px;
+
+			h2 {
+				font-size: rem(50px);
+				font-weight: 900;
+				position: relative;
+				padding-bottom: 25px;
+				margin-bottom: 25px;
+
+				&:after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100px;
+					height: 1px;
+					background: $mainGreen;
+				}
+
+			}
+
+			p {
+				font-size: rem(16px);
+				line-height: 30px;
+
+				a {
+					color: $mainGreen;
+					font-weight: 700;
+				}
+			}
+
+		}
+
+	}// end suppport section
+
+	.speciSection {
+
+		.speciImage {
+			max-width: 325px;
+			height: auto;
+			float: left;
+			padding-top: 70px;
+		}
+
+		.speciText {
+			max-width: calc(100% - 400px);
+			float: right;
+			padding-top: 70px;
+			
+			p {
+				font-size: rem(16px);
+				line-height: 30px;
+			}
+
+		}
+
+		.speciContent {
+			border-top: 1px solid $lightBorder;
+			float: left;
+			clear: both;
+			padding-top: 40px;
+			padding-bottom: 150px;
+			margin-top: 40px;
+
+			p {
+
+				font-size: rem(16px);
+				position: relative;
+				padding-left: 20px;
+				padding-bottom: 20px;
+				
+				&:first-of-type {
+					font-size: rem(18px);
+					line-height: 30px;
+					padding-bottom: 30px;
+					padding-left: 0;
+
+					&::before {
+						display: none;
+					}
+
+				}
+
+				&::before {
+					content: "";
+				    width: 20px;
+				    height: 20px;
+				    background: url(images/checkmark.png) no-repeat center center;
+				    position: absolute;
+				    left: -5px;
+				    top: 0;
+				}
+
+			}
+
+		}
+
+
+	}// end specific solutions section
+
+	#homeContBoxLogos {
+		border-top: 1px solid $lightBorder;
+	}
+
+}// end of page products pantheon
+

@@ -1,0 +1,46 @@
+.about-us-wrap {
+	margin-top: 30px;
+	padding-bottom: 150px;
+	background-color: #f7f7f7;
+}
+
+.about-us-wrap .about-us-content-wrap {
+	padding-top: 60px;
+}
+
+.about-us-content {
+	margin: 30px 0 100px 0;
+}
+
+.about-us-list {
+	margin-bottom: 100px;
+}
+
+.about-item {
+	float: left;
+	width: calc(1200px / 3 - 20px);
+	margin: 0 30px 30px 0;
+}
+
+.about-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.about-title {
+	line-height: 70px;
+	background-color: #FFF;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.about-title h5 {
+	color: #000;
+}
+
+.about-us-info {
+	text-align: left;
+}
+
+.about-single-content {
+	margin-top: 20px;
+	text-align: left;
+}

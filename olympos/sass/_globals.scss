@@ -1,0 +1,209 @@
+@mixin lowresmonitors{
+    @media screen and (max-width: 1000px){ @content;}
+}
+
+@mixin tablets{
+    @media screen and (max-width: 980px){ @content; }
+}
+
+@mixin phones{
+    @media screen and (max-width: 767px){ @content; }
+}
+
+/* =============================================================================
+   COLORS
+   ========================================================================== */
+
+
+$plava: #054380;
+$svjetloplava: #6f9bc5;
+$zelena: #6abc7b;
+$siva: #e6e6e6;
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / 10) + rem; 
+}
+
+/* =============================================================================
+   GLOBAL - Global page settings
+   ========================================================================== */
+
+html { font-size: 62.5%; } 
+body {
+  font: 400 16px 'Open Sans';
+  @include font-size(16);
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    @include lowresmonitors{
+        width: 90%;
+    }
+}
+
+.container:after .clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left {float: left;}
+
+
+.right {float: right;}
+
+
+h1, h2, h3, h4, h5 {
+    font-weight: 400;
+}
+
+
+p {
+	color: #464646;
+	font: 300 20px Roboto;
+	line-height: 40px;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+.alignleft {
+  float: left;
+  margin-right: 20px;
+}
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tl {
+  text-align: left;
+}
+.tc {
+  text-align: center;
+}
+.tr {
+  text-align: right;
+}
+.hidden {
+    display: none;
+}
+.last {
+  margin-right: 0px !important;
+}
+
+.visible-desktop {
+  @include phones{
+    display: none;
+  }
+}
+.hidden-desktop {
+  display: none;
+  @include phones{
+    display: inline-block
+  }
+}
+.row {
+  @include clearfix;
+  @include layout($gutters);
+  .span12 {
+    @include span(12);
+  }
+  .span11 {
+    @include span(11);
+    @include phones {
+      @include span(12);
+    }
+  } 
+  .span10 {
+    @include span(10);
+    @include phones {
+      @include span(12);
+    }
+  }
+  .span9 {
+    @include span(9);
+    @include phones {
+      @include span(12);
+    }
+  }
+  .span8 {
+    @include span(8);
+    @include phones {
+      @include span(12);
+    }
+  }
+  .span7 {
+    @include span(7);
+    @include phones {
+      @include span(12);
+    }
+  }
+  .span6 {
+    @include span(6);
+    @include phones {
+      @include span(12);
+    }
+  }
+  .span5 {
+    @include span(5);
+    @include phones {
+      @include span(12);
+    }
+  }
+  .span4 {
+    @include span(4);
+    @include phones {
+      @include span(12);
+    }
+  }
+  .span3 {
+    @include span(3);
+    @include phones {
+      @include span(12);
+    }
+  }
+  .span2 {
+    @include span(2);
+    @include phones {
+      @include span(12);
+    }
+  }
+  .span1 {
+    @include span(1);
+    @include phones {
+      @include span(12);
+    }
+  }
+}

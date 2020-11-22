@@ -1,0 +1,156 @@
+.page-template-page-products-datalab {
+
+	#homeContBoxOne {
+		float: left;
+		min-height: 470px;
+	}// end of home cont box one ( global one )
+
+	.entryHeader {
+		clear: both;
+		text-align: center;
+
+		p,a {
+			font-size: rem(16px);
+			color: $mainWhite;
+			text-align: left;
+		}
+
+		h2 {
+			font-size: rem(30px);
+		}
+
+	}// end of entry header
+
+	.productSubMenu {
+		background: $darkBlack;
+
+		.menu {
+
+			padding: 22px 0;
+
+			li {
+
+				display: inline-block;
+				width: auto;
+				margin-left: 50px;
+				
+
+				&:first-of-type {
+					margin-left: 0;
+				}
+
+				a {
+					color: $mainWhite;
+					opacity: 0.5;
+					font-weight: 700;
+					font-size: rem(14px);
+					text-transform: uppercase;
+					display: inline-block;
+					padding: 5px 0;
+					border-bottom: 2px solid transparent;
+
+					&:hover {
+						opacity: 1;
+						border-bottom: 2px solid $mainGreen;
+					}
+
+					&.activePage {
+						border-bottom: 2px solid $mainGreen;
+						opacity: 1;
+					}
+
+				}
+
+			}
+
+		}
+
+	}// end product submenu
+
+	.datalabContent {
+
+		padding: 110px 0;
+
+		.datalabContentLeft {
+
+			max-width: 700px;
+			width: calc(100% - 435px);
+			float: left;
+
+			h2 {
+
+				position: relative;
+				font-size: rem(36px);
+				text-transform: uppercase;
+				font-weight: 900;
+				padding-bottom: 30px;
+				margin-bottom: 30px;
+
+				&::after {
+					content: "";
+					height: 2px;
+					width: 100px;
+					background: $mainGreen;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+				}
+
+			}
+
+			p {	
+
+				font-size: rem(18px);
+				line-height: 30px;
+				padding-bottom: 40px;
+
+				&:first-of-type {
+					font-size: rem(24px);
+					line-height: 36px;
+				}
+
+			}
+
+		}// end datalab content left
+
+		.datalabContentRight {
+			width: 435px;
+			max-width: 435px;
+			float: right;
+
+			.datalabRightImage,
+			.datalabRightText
+			{
+				border: 1px solid $lightBorder;
+				padding: 40px 20px;
+				margin-bottom: 40px;
+			}
+
+			.datalabRightImage {
+				text-align: center;
+			}
+
+			.datalabRightText {
+
+				padding: 40px 60px;
+
+				p {
+					font-size: rem(18px);
+					line-height: 30px;
+					font-weight: 700;
+				}
+
+			}
+
+		}
+
+	}// end datalab content
+
+	
+
+	#homeContBoxLogos {
+		border-top: 1px solid $lightBorder;
+	}
+
+}// end of page products funkcionalnosti
+

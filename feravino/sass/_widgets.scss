@@ -1,0 +1,25 @@
+/*===============================
+=            WIDGETS            =
+===============================*/
+
+.widget-area {
+	@include breakpoint(small) {
+			margin-bottom: 50px;
+		}
+	&.no-margin-bottom-mobile {
+		@include breakpoint(small) {
+			margin-bottom: 0px;
+		}
+	}
+	.widget {
+		
+		h3.widget-title {
+			text-transform: uppercase;
+			color: $main-color; 
+			@include font-size(1.6);
+			margin-bottom: 20px; 
+		}
+	}
+}
+
+/*=====  End of WIDGETS  ======*/

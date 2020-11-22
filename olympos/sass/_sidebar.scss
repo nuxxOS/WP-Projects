@@ -1,0 +1,61 @@
+.sidebar {
+	position: fixed;
+	height: 1045px;
+	width: 420px;
+	background: linear-gradient(0deg, #f8f8f8 0%, #ffffff 100%);
+	overflow: auto;
+	.posts {
+		li {
+		border-bottom: 2px solid $siva;
+			a {
+				display: block;
+				width: 100%;
+				padding: 43px 60px;
+				color: #464646;
+				font: 400 24px Roboto;
+				text-transform: uppercase;
+			}
+			.active, a:active {
+				background: $svjetloplava;
+				color: #fff;
+			}
+		}
+	}
+}
+ 
+.dogadjaji {
+	li {
+		border-bottom: 2px solid $siva;
+		a {
+			display: block;
+			width: 100%;
+			padding: 20px;
+			color: #464646;
+			font: 400 16px Roboto;
+		}
+		.active, a:active {
+			background: $svjetloplava;
+			color: #fff;
+			.datum {
+				color: #fff;
+			}
+		}
+	}
+	.sport, .sport-en {
+		border-left: 16px solid $plava;
+	}
+	.manifestacije, .events {
+		border-left: 16px solid $zelena;
+	}
+	.sajmovi, .trade-shows {
+		border-left: 16px solid #f1aa4c;
+	}
+	.kultura, .culture {
+		border-left: 16px solid #ed676e;
+	}
+	.datum {
+		color: $zelena;
+		text-transform: uppercase;
+		font: 700 14px Roboto;
+	}
+}

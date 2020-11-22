@@ -1,0 +1,222 @@
+.page-template-page-nas-tim {
+
+	#homeContBoxOne {
+		float: left;
+		min-height: 470px;
+	}
+
+	.entryHeader {
+		clear: both;
+		text-align: center;
+
+		p,a {
+			font-size: rem(16px);
+			color: $mainWhite;
+			text-align: left;
+		}
+
+	}
+
+	.supportCont {
+
+		padding: 50px 0 0 0;
+		border: 1px solid $lightBorder;
+
+		.aboutSection {
+
+			position: relative;
+			float: left;
+			width: 100%;
+			padding-bottom: 40px;
+
+			&::before {
+				content: " ";
+				position: absolute;
+				width: 1px;
+				height: 100%;
+				background: $lightBorder;
+				visibility: visible;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 30px;
+				height: 60px;
+				background: url(images/o-nama-check.png) no-repeat center center;
+				background-color: $mainWhite;
+				visibility: visible;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 40px;
+				margin: auto;
+			}
+		}
+
+		div.floatR {
+			padding-left: 50px;
+		}
+
+		.aboutInfoPart {
+			width: 100%;
+			padding: 75px 0;
+
+			&:nth-child(2n) {
+				background-color: #f9f9f9;
+			}
+
+			.memberInfoImage {
+				width: 160px;
+				height: auto;
+			}
+
+			.memberInfoContent {
+				width: calculateWidth(13.34);
+				padding-left: 50px;
+
+				h2 {
+					font-size: rem(18px);
+					position: relative;
+					margin-bottom: 30px;
+					font-weight: 700;
+
+				}
+
+				p {
+					font-size: rem(16px);
+					font-weight: 400;
+					line-height: auto;
+					margin-bottom: 10px;
+					position: relative;
+					padding-left: 40px;
+
+					&:last-of-type {
+						margin-bottom: 40px;
+					}
+
+					&::after {
+						content: "";
+						width: 20px;
+						height: 20px;
+						background: url(images/checkmark.png) no-repeat center center;
+						position: absolute;
+						left: -5px;
+						top: 0;
+					}
+
+				}
+
+				.teamMemberLinks {
+
+					a {
+						color: $mainGreen;
+						display: inline-block;
+						float: left;
+						clear: left;
+						margin-bottom: 10px;
+					}
+
+				}// end team member links
+
+			}// end member info content
+
+
+		}// end about info part
+
+		.aboutSectionText {
+
+			p {
+				font-size: rem(16px);
+				line-height: 24px;
+				font-weight: 400;
+			}
+
+		}/* end about section text */
+		
+		&.aboutInfoContent {
+
+			background: none;
+
+			.suppImg {
+				
+				p {
+					font-size: rem(16px);
+					margin-bottom: 20px;
+
+					&:first-of-type {
+						margin-bottom: 60px;
+					}
+				}
+
+			}
+
+		}// end about info content
+
+	}/* end supp cont */
+	
+	.aboutChildPages {
+		
+		background: url(images/o-nama-child-bg.jpg) no-repeat center center;
+		background-size: cover;
+		padding: 120px 0;
+
+		.aboutChildPage {
+			float: left;
+			width: 31.667%;
+			margin-right: 2.5%;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			a {
+				display: block;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-ms-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+
+				&:hover {
+				
+				-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+				-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+				box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+
+					h3 {
+						color: $mainGreen;
+					}
+				}
+
+				h3 {
+					padding: 27px 10px;
+					text-align: center;
+					background-color: $mainWhite;
+					color: $mainTypog;
+					text-transform: uppercase;
+					font-weight: 700;
+					font-size: rem(16px);
+					-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-ms-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+				}
+
+				img {
+					max-width: 100%;
+				}
+
+			}// end of a tag
+
+			
+		}// end about child page
+
+	} // end about child pages
+	
+
+}

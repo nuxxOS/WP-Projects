@@ -1,0 +1,61 @@
+.homemain {
+	overflow: auto;
+	background: url(images/vubg.jpg) no-repeat;
+	background-size: cover !important;
+	color: #fff;
+	height: 1200px;
+}
+.title {
+	margin: 270px auto 90px;
+	width: 1550px;
+	overflow: visible;
+	h1 {
+		font: 700 82px "Aharoni-Bold";
+		text-transform: uppercase;
+		margin: 0;
+	}
+	.tcel {
+		font: 700 56px "Roboto Condensed";
+		margin: 0 56px 0 35px;
+		padding: 6px;
+		color: #fff;
+	}
+}
+.prognoza-vremena {
+	img {
+		width: 100px;
+		height: auto;
+		vertical-align: middle;
+		display: inline-block;
+		margin-top: -20px;
+	}
+}
+.links {
+  @include clearfix;
+	width: 1550px;
+	margin: 0 auto 40px;
+	.link {
+		text-align: center;
+		float: left;
+		a {
+			color: #fff;
+			background: rgba($plava, 0.7);
+			display: block;
+			padding: 110px 0 50px;
+			height: 308px;
+			width: 308px;
+			border: 1px solid $svjetloplava;
+			font: 700 24px "Roboto Condensed";
+		}
+		a:active {
+			background: $zelena;
+		}
+		img {
+			display: block;
+			margin: 0 auto 70px;
+		}
+	}
+}
+.logo {
+	margin-bottom: 40px;
+}

@@ -1,0 +1,58 @@
+/*============================
+=            POST            =
+============================*/
+
+.post-item {
+	min-height: 470px;
+	position: relative;
+	margin-bottom: 50px;
+	.post-image {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.post-title {
+		line-height: 1;
+		a {
+			color: black;
+			display: inline-block;
+			margin-bottom: 10px;
+			margin-top: 20px;
+			h1 {
+				@include font-size(2);
+				line-height: 1;
+			}
+		}
+	}
+	a.read-more {
+		@include button;
+		@include abs-pos(auto, auto, 0, 15px);
+	}
+}
+
+/*=====  End of POST  ======*/
+
+
+/*==================================
+=            PAGINATION            =
+==================================*/
+
+.wp-pagenavi {
+	span.pages {
+		display: none;
+	}
+	a, span {
+		color: black;
+		font-weight: bold;
+		padding: 5px 10px !important;
+		margin-right: 10px !important;
+		border: none !important;
+		&.current {
+			color: $main-color;
+			border: 2px solid $main-color !important;
+		}
+	}
+}
+
+/*=====  End of PAGINATION  ======*/

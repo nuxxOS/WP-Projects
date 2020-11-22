@@ -1,0 +1,705 @@
+.langLog {
+	margin-top: 10px;
+	margin-bottom: 40px;
+	position: relative;
+
+	p {
+		font-size: rem(14px);
+		font-weight: 700;
+		margin-right: 60px;	
+	}
+
+	p:last-of-type {
+		margin-right: 0;
+	}
+
+	span {
+		margin-right: 10px;
+
+		&.person {
+			margin-right: 0;
+		}
+
+		&.icon-chevron-down {
+			color: #b9b9b9;
+		}
+	}
+
+	.myAccountSection {
+
+		cursor: pointer;
+
+	}// end my account section
+
+	.loginContent {
+
+		position: absolute;
+		right: 130px;
+		top: 40px;
+		max-width: 300px;
+		width: 300px;
+		background-color: #f2f2f2;
+		z-index: 9;
+
+		.loginForm, .forgotPass, .registerForm {
+
+			width: 100%;
+			position: relative;
+			border-top: 2px solid $mainGreen;
+
+			.loginContentTitle {
+
+				display: block;
+				margin: 0;
+				padding: 17px 20px;
+				border-bottom: 1px solid #d6d6d6;
+
+				.sectionTitle {
+
+					width: 90%;
+					display: block;
+					float: left;
+					margin: 0;
+					text-align: left;
+					font-size: rem(16px);
+
+				}
+
+				.sectionClose {
+
+					width: 11px;
+					height: 11px;
+					display: block;
+					float: right;
+					margin: 0;
+					text-align: right;
+					font-weight: 700;
+					cursor: pointer;
+					background: url(images/close.png) no-repeat center center;
+					background-size:contain;
+				
+				}
+
+			}// end login content title
+
+			.forgotPassLink {
+
+				position: absolute;
+				top: 210px;
+				left: 25px;
+				margin: 0;
+
+				a {
+					color: $mainTypog;
+					font-size: rem(14px);
+				}
+
+			}// end forgot pass link
+
+			.registerLink {
+
+				margin: 0;
+				display: block;
+				padding: 30px;
+				text-align: center;
+
+				span {
+					margin: 0;
+					display: block;
+					font-size: rem(16px);
+					font-weight: 700;
+					line-height: 35px;
+				}
+
+				a {
+					display: inline-block;
+					border-bottom: 1px solid $mainGreen;
+					color: $mainGreen;
+					font-size: rem(16px);
+					font-weight: 900;
+					width: auto;
+				}
+
+			}// end forgot pass link
+
+			.wppb-alert {
+				text-align: center;
+				padding: 20px 10px;
+
+				a {
+					color: $mainGreen;
+				}
+			}
+
+			div#wppb-recover-password {
+
+				padding: 17px 20px;
+				text-align: center;
+
+				p {
+					margin: 0;
+				}
+
+				.wppb-username-email {
+
+					padding: 20px 0;
+
+					#username_email {
+
+						width: 100% !important;
+						border: 1px solid $lightBorder;
+						border-radius: 25px;
+						padding: 15px 20px;
+						outline-color: transparent;
+
+						&:focus {
+							outline: none;
+						}
+
+					}
+
+				}// end username email
+
+				.form-submit {
+
+					input {
+
+						background-color: $mainGreen;
+						color: #fff;
+						font-size: rem(16px);
+						font-weight: 900;
+						text-transform: uppercase;
+						padding: 17px 20px;;
+						cursor: pointer;
+						width: 100%;
+						border: 1px solid $lightBorder;
+						border-radius: 25px;
+						outline-color: transparent;
+
+						&:focus {
+							outline: none;
+						}
+
+					}
+
+				}// end form submit
+
+			}// end recover password
+
+			#wppb_register_pre_form_message {
+				padding: 20px 10px;
+			}
+
+			.wppb-user-forms {
+					
+				ul {
+
+					li {
+
+						width: 90%;
+						margin: 0 auto;
+						text-align: center;
+						padding: 5px 0;
+
+						input {
+
+							width: 100% !important;
+							border: 1px solid $lightBorder;
+							border-radius: 25px;
+							padding: 15px 20px;
+							outline-color: transparent;
+
+							&:focus {
+								outline: none;
+							}
+
+						}
+
+						&.wppb-send-credentials-checkbox {
+							
+							input {
+
+								width: auto !important;
+								display: inline-block;
+
+							}
+
+						}
+
+					}
+
+				}
+
+				.form-submit {
+
+					padding: 17px 20px;
+
+					input {
+
+						background-color: $mainGreen;
+						color: #fff;
+						font-size: rem(16px);
+						font-weight: 900;
+						text-transform: uppercase;
+						padding: 17px 20px;;
+						cursor: pointer;
+						width: 100%;
+						border: 1px solid $lightBorder;
+						border-radius: 25px;
+						outline-color: transparent;
+
+						&:focus {
+							outline: none;
+						}
+
+					}
+
+				}// end form submit
+
+
+			}// end user forms
+
+		}// end login form, forgot pass, registerForm
+
+	}// end login content
+
+	.cartContentLink {
+
+		cursor: pointer;
+
+		.cart,.cartHead {
+			vertical-align: middle;
+		}
+
+		.cartItemNumber {
+			display: inline-block;
+			color: #fff;
+			border-radius: 50%;
+			background-color: $mainGreen;
+			font-size: rem(14px);
+			text-align: center;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+		}
+	}
+
+	.cartContent {
+		position: absolute;
+	    right: 0;
+	    top: 40px;
+	    max-width: 300px;
+	    width: 300px;
+	    background-color: #f2f2f2;
+	    z-index: 9;
+	    border-top: 2px solid $mainGreen;
+
+	    span {
+
+	    	display: block;
+		    margin: 0;
+		    padding: 17px 20px;
+		    border-bottom: 1px solid #d6d6d6;
+
+		    &.sectionTitle {
+		    	width: 90%;
+			    display: block;
+			    float: left;
+			    margin: 0;
+			    text-align: left;
+			    font-size: rem(16px);
+			    padding: 0;
+			    border-bottom: none;
+		    }
+
+	    	&.sectionClose {
+	    		width: 11px;
+			    height: 11px;
+			    display: block;
+			    float: right;
+			    margin: 0;
+			    text-align: right;
+			    font-weight: 700;
+			    cursor: pointer;
+			    background: url(images/close.png) no-repeat center center;
+			    background-size: contain;
+			    padding: 0;
+			    border-bottom: none;
+	    	}
+
+	    }
+
+	    .woocommerce {
+
+	    	ul.product_list_widget {
+	    		
+	    		li{
+
+					padding: 20px;
+
+					a {
+						float: left;
+						text-align: left;
+						font-size: rem(14px);
+						font-weight: 700;
+						color: $mainTypog;
+
+						&.remove {
+							font-size: rem(16px);
+							text-align: center;
+						}
+					}
+
+	    			img {
+						float: left;
+						margin: 0;
+						width: 100px;
+						height: 100px;
+						margin-right: 20px;
+	    			}
+
+	    			.quantity {
+						
+						position: absolute;
+					    right: 0;
+					    bottom: 0;
+					    padding: 0;
+					    top: 60px;
+					    width: 55%;
+					    text-align: left;
+					    border: none;
+
+					    span {
+							display: inline-block;
+							padding: 0;
+							width: 100%;
+							border: none;
+
+							&.woocommerce-Price-amount {
+								color: $mainGreen;
+								font-size: rem(16px);
+								font-weight: 700;
+							}
+
+							span {
+								display: inline-block;
+								width: auto;
+
+							}
+
+					    }
+
+	    			}// end quantity
+
+	    		} // end li item
+
+	    	}// end product list widget
+
+	    	.total {
+
+	    		margin: 0;
+	    		text-align: left;
+	    		padding: 20px;
+	    		text-transform: uppercase;
+	    		font-size: rem(16px);
+	    		line-height: 35px;
+
+	    		.woocommerce-Price-amount {
+	    			display: inline-block;
+	    			text-align: right;
+	    			float: right;
+	    			padding: 0;
+					border: 0;
+					color: $mainGreen;
+					font-size: rem(23px);
+					font-weight: 700;
+
+	    			span {
+
+	    				display: inline-block;
+	    				padding: 0;
+	    				border: none;
+
+	    			}
+
+	    		}
+
+	    	}// end total
+
+	    }// end woocommerce
+
+	}// end cart content
+
+}// end lang log
+
+#wppb-login-wrap {
+
+	#loginform {
+		border-bottom: 1px solid #d6d6d6;
+	}
+
+	p {
+
+		width: 100%;
+		padding: 17px 20px;
+		margin: 0 auto !important;
+		position: relative;
+
+
+		&.login-remember {
+			display: none;
+		}
+
+		input {
+			width: 100% !important;
+			border: 1px solid $lightBorder;
+			border-radius: 25px;
+			padding: 15px 20px 15px 60px;
+			outline-color: transparent;
+
+			&:focus {
+				outline: none;
+			}
+
+		}
+
+		&.login-username input {
+		
+			background-image: url(images/mailIcon.png);
+			background-repeat: no-repeat;
+			background-position: 8% 50%;
+
+		}
+
+		&.login-password input {
+
+			background-image: url(images/lockIcon.png);
+			background-repeat: no-repeat;
+			background-position: 8% 50%;
+
+		}
+
+		&.login-submit {
+
+			#wppb-submit {
+				background-color: $mainGreen;
+				color: #fff;
+				font-size: rem(16px);
+				font-weight: 900;
+				text-transform: uppercase;
+				padding: 17px 20px;;
+				margin: 20px 0 0 0;
+				cursor: pointer;
+			}
+
+		}
+
+	}
+
+}// end login wrap
+
+.logoSearch {
+	margin-bottom: 20px;
+
+	.logo {
+		float: left;
+
+		img {
+			display: block;
+		}
+	}
+
+	.search {
+		width: calculateWidth(33);
+		float: right;
+		position: relative;
+		border: 1px solid $lightBorder;
+		border-radius: 25px;
+
+		input {
+			display: block;
+			width: 100%;
+			border:none;
+			padding: 11px 20px;
+			background: transparent;
+			color: $otherLightTypog;
+			font-size: rem(16px);
+			font-style: italic;
+			outline: none;
+
+			&:focus {
+				outline-color: transparent;
+			}
+		}
+
+		input:last-of-type {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: auto;
+			color: transparent;
+			background: url(images/search-icon.png) no-repeat center center;
+		}
+	}
+}
+
+
+.menu-main-menu-container {
+	float: left;
+}
+
+.mainMenu {
+
+	.homeLink {
+		display: inline-block;
+		float: left;
+		font-size: rem(26px);
+		color: #b4b4b4;
+		//width: 25px;
+		//height: 25px;
+		//background: url(images/homeLink.png) no-repeat center center;
+		
+		&:hover,
+		&.activeMenuItem
+		{
+			color: $mainGreen;
+		}
+	}
+
+}// end mainMenu
+
+.mainMenu .menu {
+	width: 100%;
+	line-height: 26px;
+
+	>li {
+		padding-bottom: 20px;
+	}
+
+	li {
+
+		float: left;
+		width: auto;
+		padding-left: 50px;
+		font-size: rem(18px);
+
+		a {
+			color: $mainTypog;
+			font-weight: 700;
+
+			&.activeMenuItem {
+				color: $mainGreen;
+			}
+		}
+
+		a:hover {
+			color: $mainGreen;
+		}
+
+		.sub-menu {
+			display: none;
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 180px;
+			padding: 19px 18.8%;
+			background: $darkBlack;
+			border-top: 3px solid $mainGreen;
+
+			li:first-of-type {
+				margin-left: 0;
+			}
+
+			a {
+				color: $mainWhite;
+				opacity: 0.5;
+				text-transform: uppercase;
+				font-size: rem(14px);
+				font-weight: 700;
+
+				&:hover {
+					opacity: 1;
+				}
+
+			}
+
+		}// end sub menu
+
+		&.menu-item-has-children {
+			
+			&:hover {
+
+				>a {
+					color: $mainGreen;
+
+					&::after {
+						
+						visibility: visible;
+
+					}
+				}
+
+				.sub-menu {
+					display: block;
+				}
+
+			}
+
+			&::after {
+				content: "\e900";
+				font-family: 'icomoon' !important;
+			    speak: none;
+			    font-size: rem(12px);
+			    margin-left: 5px;
+			    color: $mainGreen;
+			    font-style: normal;
+			    font-weight: normal;
+			    font-variant: normal;
+			    text-transform: none;
+			    line-height: 1;
+			    -webkit-font-smoothing: antialiased;
+			    -moz-osx-font-smoothing: grayscale;
+			}
+
+			>a {
+				position: relative;
+				cursor: pointer;
+
+				&::after {
+
+						content: "";
+						width: 15px;
+						height: 7px;
+						background: url(images/menu-up-arrow.png) no-repeat center center;
+						background-size: contain;
+						position: absolute;
+						bottom: -50px;
+						right: 0;
+						left: 0;
+						margin: auto;
+						top: 0;
+						visibility: hidden;
+
+				}
+
+				&:hover {
+						
+					&::after {
+						
+						visibility: visible;
+
+					}
+
+				}
+
+			}
+
+		}// end menu item has children
+
+	}
+
+}
+
+.hidden {
+	display: none;
+}

@@ -1,0 +1,622 @@
+/*============================
+=            PAGE            =
+============================*/
+.breadcrumbs-wrapper {
+	background: $main-color;
+	padding: 1rem 0;
+	#breadcrumbs{
+	    list-style:none;
+	    margin:10px 0;
+	    overflow:hidden;
+	    span {
+		    display:inline-block;
+			vertical-align:middle;
+		    margin-right:15px;
+		    text-transform: uppercase;
+		    color: white;
+		    a {
+		    	color: white; 
+		    	margin: 0 10px;
+		    }
+		    &.breadcrumb_last {
+		    	margin-left: 10px;
+		    }
+		}
+		.separator{
+		    font-size:18px;
+			font-weight:100;
+		    color:#fff;  
+		}
+	}
+} 
+
+.page-content, .post-content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	@include breakpoint(ipadPortrait) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	@include breakpoint(small) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		display: inline-block;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 20px;
+	}
+	strong {
+		font-weight: bold;
+		color: $main-color;
+	}
+	ul {
+		margin-left: 20px;
+		padding: 0 20px;
+		margin-bottom: 20px;
+		li {
+			list-style-type: disc;
+		}
+	}
+	ol {
+		margin-left: 20px;
+		padding: 0 20px;
+		margin-bottom: 20px;
+		li {
+			list-style-type: decimal;
+		}
+	}
+}
+
+.page-headline {
+	color: $main-color;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 80px !important;
+	@include font-size(3);
+	@include breakpoint(small) {
+		margin-bottom: 40px;
+	}
+}
+
+/*=====  End of PAGE  ======*/
+
+
+
+/*===============================
+=            GALLERY            =
+===============================*/
+
+.gallery {
+    .gallery-item {
+    	position: relative;
+    	display: block;
+	    // @include opacity(0);
+	    @include breakpoint(small) {
+	    	width: 100% !important;
+	    }
+	    .gallery-image {
+	    	position: relative;
+	    	&:before {
+	    		content: "";
+	    		@include abs-pos(0,0,0,0);
+	    		width: 100%;
+	    		height: 100%;
+	    		background: black;
+	    		@include opacity(0);
+	    		visibility: hidden;
+	    		@include transform(translateY(20px));
+	    		@include transition(all .3s ease-in-out);
+	    		z-index: 1;
+	    	}
+	    	&:after {
+	    		content: "";
+	    		@include abs-pos(0,0,0,0);
+	    		width: 100%;
+	    		height: 100%;
+	    		background: url('./images/icons/zoom.png') no-repeat center center;
+	    		z-index: 2;
+	    		@include opacity(0);
+	    		visibility: hidden;
+	    		@include transform(translateY(20px));
+	    		@include transition(all .3s ease-in-out);
+	    	}
+	    	&:hover {
+	    		&:before {
+	    			display: block;
+	    			@include opacity(0.8);
+	    			@include transform(translateY(0px));
+	    			visibility: visible;
+	    		}
+	    		&:after {
+	    			@include opacity(1);
+	    			@include transform(translateY(0px));
+	    			transition-delay: 0.2s;
+	    			-webkit-transition-delay: 0.2s;
+	    			visibility: visible;
+	    		}
+	    	}
+	    }
+	    .gallery-caption {
+	    	font-weight: bold;
+	    	@include font-size(2);
+	    	color: black;
+	    	text-align: center;
+	    }
+    }
+    .gallery-icon {
+	    	position: relative;
+	    	::before {
+	    		content: "";
+	    		@include abs-pos(0,0,0,0);
+	    		width: 100%;
+	    		height: 100%;
+	    		background: black;
+	    		@include opacity(0);
+	    		visibility: hidden;
+	    		@include transform(translateY(20px));
+	    		@include transition(all .3s ease-in-out);
+	    		z-index: 1;
+	    	}
+	    	::after {
+	    		content: "";
+	    		@include abs-pos(0,0,0,0);
+	    		width: 100%;
+	    		height: 100%;
+	    		background: url('./images/icons/zoom.png') no-repeat center center;
+	    		z-index: 2;
+	    		@include opacity(0);
+	    		visibility: hidden;
+	    		@include transform(translateY(20px));
+	    		@include transition(all .3s ease-in-out);
+	    	}
+	    	&:hover {
+	    		::before {
+	    			display: block;
+	    			@include opacity(0.8);
+	    			@include transform(translateY(0px));
+	    			visibility: visible;
+	    		}
+	    		::after {
+	    			@include opacity(1);
+	    			@include transform(translateY(0px));
+	    			transition-delay: 0.2s;
+	    			-webkit-transition-delay: 0.2s;
+	    			visibility: visible;
+	    		}
+	    	}
+	    }
+	    img {
+	    	border: 0px !important;
+	    	display: block;
+	    }
+}
+
+/*=====  End of GALLERY  ======*/
+
+
+/*=======================================
+=            GALLERY DEFAULT            =
+=======================================*/
+
+.gallery {
+	margin-left: -15px !important;
+    margin-right: -15px !important;
+    .gallery-item {
+    	position: relative;
+	    min-height: 1px;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    margin-bottom: 15px;
+	    // @include opacity(0);
+	    @include breakpoint(small) {
+	    	width: 100% !important;
+	    }
+	    // @for $i from 1 through 400 {
+		   //  &:nth-child( #{$i} ) {
+		   //    -webkit-animation: slideIn .3s #{$i * 0.15}s ease 1 forwards;
+		   //    -moz-animation: slideIn .3s #{$i * 0.15}s ease 1 forwards;
+		   //   animation: slideIn .3s #{$i * 0.15}s ease 1 forwards; 
+		   //  }
+		  //}
+	    
+	    .gallery-caption {
+	    	font-weight: bold;
+	    	@include font-size(2);
+	    }
+    }
+}
+
+
+/*==============================
+=            QUOTES            =
+==============================*/
+
+.quotes {
+	height: 250px;
+	background: #f8f7f7;
+	.quote-item {
+		max-width: 860px;
+		margin: auto;
+		text-align: center;
+		@include vertical-align();
+		p {
+			@include font-size(2.4);
+			line-height: 1.3;
+			font-style: italic;
+			font-weight: 400; 
+			color: black;
+		}
+	}
+}
+
+/*=====  End of QUOTES  ======*/
+
+
+/*========================================
+=            ADDITIONAL PAGES            =
+========================================*/
+
+.additional-pages {
+	padding: 50px 0;
+	.page-item {
+		height: 300px;
+		position: relative;
+		margin-bottom: 30px;
+		&:hover {
+			.page-title {
+				height: 100%;
+				background: rgba(0, 0, 0, 0.6) url('./images/icons/zoom.png') no-repeat center center;
+				@include transition(all .3s ease-in-out);
+				h1 {
+					top: 100%;
+					@include transform(translateY(-50px) !important);
+				}
+			}
+		}
+		.page-title {
+			@include abs-pos(auto, auto, 0, auto);
+			width: 100%;
+    		background: rgba(0, 0, 0, 0.6) url('./images/icons/zoom.png') no-repeat top center;
+    		background-image: none;
+    		@include transition(all .3s ease-in-out);
+    		height: 80px;
+    		text-align: center;
+			h1 {
+				color: $main-color;
+				text-transform: uppercase;
+				@include font-size(2.4);
+				@include vertical-align();
+				@include transition(all .3s ease-in-out);
+			}
+		}
+	}
+}
+
+/*=====  End of ADDITIONAL PAGES  ======*/
+
+
+/*=======================================
+=            ADDITIONAL INFO            =
+=======================================*/
+
+.additional-info {
+	border-top: 1px solid rgba($main-color, 0.5);
+	background: #f8f7f7;
+	@include font-size(1.6);
+	font-weight: 300;
+}
+
+/*=====  End of ADDITIONAL INFO  ======*/
+
+
+/*=============================
+=            GOALS            =
+=============================*/
+
+.goals {
+	padding: 80px 0;
+	@include breakpoint(small) {
+		padding: 20px 0;
+	}
+	.goals-wrapper {
+		padding: 60px;
+		border: 2px solid $main-color;
+		min-height: 340px;
+		@include breakpoint(small) {
+			padding: 30px;
+		}
+		h3 {
+			color: $main-color;
+			@include font-size(2.4);
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+		ul {
+			li {
+				margin-bottom: 5px;
+				position: relative;
+				@include font-size(1.8);
+				font-weight: 400;
+				@include breakpoint(small) {
+					@include font-size(1.6);
+				}
+				&:before {
+				    content: "• ";
+				    color: $main-color;
+				    margin-right: 10px;
+				}
+			}
+		}
+	}
+	
+}
+
+/*=====  End of GOALS  ======*/
+
+
+
+/*==============================
+=            STORES            =
+==============================*/
+
+.stores {
+	padding: 100px 0 150px;
+	border-top: 1px solid rgba($main-color, 0.5);
+	.nav-tabs {
+		border-bottom: 0;
+		margin-bottom: 50px;
+		li {
+			&:first-child {
+				a {
+					padding-left: 0;
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+		&>li>a {
+			text-transform: uppercase;
+			font-weight: bold;
+			color: $main-color;
+			padding: 20px 30px !important;
+			border: none;
+			@include font-size(2);
+			position: relative;
+			@include breakpoint(ipadLandscape) {
+				@include font-size(1.5);
+			}
+			@include breakpoint(ipadPortrait) {
+				@include font-size(1.5);
+			}
+			&:before {
+				content: "";
+				@include abs-pos(auto, 0, 0, 0);
+				margin: auto;
+				height: 3px;
+				width: 0px;
+				@include border-radius(40px);
+				background: $main-color;
+				@include opacity(0);
+				@include transition(all .3s ease-in-out);
+			}
+			&:after {
+				content: "";
+				background: black;
+				width: 6px;
+				height: 6px;
+				@include border-radius(6px);
+				@include abs-pos(50%, 0, auto, 0);
+			}
+			&:hover {
+				background: none;
+				&:before {
+					width: 40px;
+					@include opacity(1);
+				}
+			}
+		}
+		&>li.active>a, &>li.active>a:hover, &>li.active>a:focus {
+			border: none;
+			color: black;
+			background: none;
+			&:before {
+				content: "";
+				@include abs-pos(auto, 0, 0, 0);
+				margin: auto;
+				height: 3px;
+				width: 40px;
+				@include border-radius(40px);
+				background: black;
+				@include opacity(1);
+				@include transition(all .3s ease-in-out);
+			}
+		}
+	}
+	.tab-content {
+		strong {
+			font-weight: bold;
+		}
+		ul {
+			li {
+				line-height: 1.4;
+			}
+		}
+		br {
+			display: none;
+		}
+	}
+}
+
+/*=====  End of STORES  ======*/
+
+
+
+
+
+/*====================================
+=            CONTACT FORM            =
+====================================*/
+
+.wpcf7-form {
+	input[type="text"], input[type="email"] {
+		@include border-radius(0px);
+		box-shadow: none;
+		border: 1px solid $main-color;
+		margin-bottom: 30px;
+		height: 60px;
+		line-height: 60px;
+		padding: 0 20px;
+		color: black;
+		@include font-size(1.6);
+		&:focus {
+			box-shadow: none;
+			border: 1px solid black;
+		}
+		&::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+		  color: black;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  @include font-size(1.6);
+		}
+
+		&:-moz-placeholder { /* Firefox 18- */
+		  color: black;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  @include font-size(1.6);
+		}
+
+		&::-moz-placeholder { /* Firefox 19+ */
+		  color: black;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  @include font-size(1.6);
+		}
+
+		&:-ms-input-placeholder { /* IE 10+ */
+		  color: black;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  @include font-size(1.6);
+		}
+
+		&::-ms-input-placeholder { /* Edge */
+		  color: black;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  @include font-size(1.6);
+		}
+
+		&:placeholder-shown { /* Standard one last! */
+		  color: black;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  @include font-size(1.6);
+		}
+	}
+	textarea {
+		@include border-radius(0px);
+		box-shadow: none;
+		border: 1px solid $main-color;
+		max-width: 100%;
+		padding: 20px;
+		resize: none;
+		@include font-size(1.6);
+		&:focus {
+			box-shadow: none;
+			border: 1px solid black;
+		}
+		&::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+		  color: black;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  @include font-size(1.6);
+		}
+
+		&:-moz-placeholder { /* Firefox 18- */
+		  color: black;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  @include font-size(1.6);
+		}
+
+		&::-moz-placeholder { /* Firefox 19+ */
+		  color: black;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  @include font-size(1.6);
+		}
+
+		&:-ms-input-placeholder { /* IE 10+ */
+		  color: black;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  @include font-size(1.6);
+		}
+
+		&::-ms-input-placeholder { /* Edge */
+		  color: black;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  @include font-size(1.6);
+		}
+
+		&:placeholder-shown { /* Standard one last! */
+		  color: black;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  @include font-size(1.6);
+		}
+	}
+	input[type="submit"] {
+		height: 60px;
+		line-height: 60px;
+		background: black;
+		text-align: center;
+		border: none;
+		width: 160px;
+		text-transform: uppercase;
+		color: white;
+		margin-top: 20px;
+		font-weight: bold;
+		float: right;
+		@include font-size(1.8);
+	}
+}
+
+/*=====  End of CONTACT FORM  ======*/
+
+
+
+
+@-webkit-keyframes slideIn {
+  0% {
+    @include transform(translateY(20px));
+  }
+  100% {
+    @include transform(translateY(0px));
+    @include opacity(1);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    @include transform(translateY(20px));
+  }
+  100% {
+    @include transform(translateY(0px));
+    @include opacity(1);
+  }
+}
+@keyframes slideIn {
+  0% {
+    @include transform(translateY(20px));
+  }
+  100% {
+    @include transform(translateY(0px));
+    @include opacity(1);
+  }
+}

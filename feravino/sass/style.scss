@@ -1,0 +1,39 @@
+/* CSS Document */
+/*!
+Theme Name: Feravino
+Description: Feravino wp theme
+Version: 3.0
+Author: Krešo Galić
+Author URI: http://gauss.hr/
+Tags: theme
+
+        The CSS, XHTML is released under GPL:
+        http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+/* Vendor */
+@import "bootstrap";
+
+
+/* Setup */
+@import "reset";
+@import "mixins";
+@import "variables";
+@import "fonts";
+@import "globals";
+@import "typography";
+ 
+/* WP parts */
+@import "header";
+@import "homepage";
+@import "widgets"; 
+@import "page";
+@import "post";
+@import "footer";
+@import "slick";
+@import "slick-theme"; 
+@import "simplelightbox";
+@import "products";
+@import "contact"; 
+@import "single-product";

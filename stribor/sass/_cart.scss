@@ -1,0 +1,141 @@
+.cart-added-products {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 40px;
+    margin-top: 30px;
+    background-color: #bcc3cc;
+    padding-left: 20px;
+}
+
+table.shop_table {
+	width: 100%;
+}
+
+tr.cart_item {
+	border: 1px solid #e1e1e1;
+    background-color: #fff;
+}
+
+tr.cart_item td {
+	padding: 20px;
+	vertical-align: middle;
+	border-left: 1px solid #e1e1e1;
+	border-right: 1px solid #e1e1e1;
+}
+
+tr.cart_item .product-name {
+	float: left;
+    text-align: left;
+    padding-left: 20px;
+    height: 120px;
+    padding: 20px 0 0 20px;
+}
+
+tr.cart_item .product-name a {
+	color: #282828;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+td.product-thumbnail img {
+	float: left;
+	border: 1px solid #e1e1e1;
+}
+
+td.product-remove {
+	width: 5%;
+}
+
+td.price-request {
+	width: 18%;
+}
+
+td.actions {
+	display: none;
+}
+
+thead tr {
+	display: none;
+}
+
+.icon-bin {
+	font-size: 20px;
+	color: #bcc3cc;
+	-webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.icon-bin:hover {
+	color: #f52830;
+}
+
+input.button[value="Update Cart"] {
+	display: none;
+}
+
+.small-wrap {
+	width: 32%;
+	display: block;
+	float: left;
+	margin-right: 2%
+}
+
+.small-wrap:nth-of-type(4) {
+	margin-right: 0;
+}
+
+.big-wrap {
+	clear: both;
+}
+
+.checkout-link {
+	margin: 40px 0 150px 0;
+}
+
+.checkout-link a {
+	float: left;
+	width: 20%;
+    line-height: 55px;
+    color: #fff;
+    background-color: #fff;
+    border-style: solid;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    padding-left: 7%;
+	-webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.checkout-link a.submit:hover {
+	background-color: #febe10!important;
+}
+	
+.cart-background-wrap {
+	padding-top: 60px;
+	background-color: #f7f7f7;
+}
+
+.woocommerce p.cart-empty,
+.woocommerce p.return-to-shop {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.woocommerce p.cart-empty a,
+.woocommerce p.return-to-shop a {
+	color: #f52830;
+}
+
+.cart-empty-wrap {
+	padding: 55px 0;
+}
+
+
+
+

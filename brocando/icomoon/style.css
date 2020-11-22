@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?oew6sw');
+  src:  url('fonts/icomoon.eot?oew6sw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?oew6sw') format('truetype'),
+    url('fonts/icomoon.woff?oew6sw') format('woff'),
+    url('fonts/icomoon.svg?oew6sw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qr-code-scan:before {
+  content: "\e914";
+}
+.icon-send-message-button:before {
+  content: "\e915";
+}
+.icon-circle:before {
+  content: "\e900";
+}
+.icon-giftbox:before {
+  content: "\e901";
+}
+.icon-location-pin:before {
+  content: "\e902";
+}
+.icon-note:before {
+  content: "\e903";
+}
+.icon-sale:before {
+  content: "\e904";
+}
+.icon-skype-logo:before {
+  content: "\e905";
+}
+.icon-social:before {
+  content: "\e906";
+}
+.icon-symbol:before {
+  content: "\e907";
+}
+.icon-telephone:before {
+  content: "\e908";
+}
+.icon-time-planning:before {
+  content: "\e909";
+}
+.icon-web:before {
+  content: "\e90a";
+}
+.icon-whatsapp:before {
+  content: "\e90b";
+}
+.icon-technology:before {
+  content: "\e90c";
+}
+.icon-check:before {
+  content: "\e90d";
+}
+.icon-info:before {
+  content: "\e90e";
+}
+.icon-photocam:before {
+  content: "\e90f";
+}
+.icon-potpis:before {
+  content: "\e910";
+}
+.icon-chevron-thin-right:before {
+  content: "\e911";
+}
+.icon-chevron-thin-left:before {
+  content: "\e912";
+}
+.icon-sphere:before {
+  content: "\e913";
+}
+.icon-globe:before {
+  content: "\e913";
+}
+.icon-internet:before {
+  content: "\e913";
+}
+

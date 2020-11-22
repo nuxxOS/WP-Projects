@@ -1,0 +1,139 @@
+/* =======================================================================
+## ++ Globals
+========================================================================== */
+html{
+    font-size: 100%;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lato', sans-serif;
+    color: $mainTypog;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+h1 {
+	font-size: rem(60px);
+	color: $mainTypog;
+	font-weight: 900;
+}
+
+h2 {
+	font-size: rem(36px);
+	color: $mainTypog;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: rem(16px);
+	color: $mainTypog;
+	font-weight: 700;
+}
+
+p {
+	font-size: rem(24px);
+	font-weight: 400;
+	color: $mainTypog;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+strong {
+	font-weight: 700;
+}
+
+
+/* =======================================================================
+## ++ Cleafix
+========================================================================== */
+
+/* float clearing for IE6 */
+* html .clearfix{
+ height: 1%;
+ overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+ min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+ font-size: 0;
+}
+
+.clr{clear:both;}
+
+.wrapper {
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.fullPageWrap {
+	border-top: 3px solid $mainGreen;
+}
+
+.sizeIcon {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+.boxFull {
+	width: 100%;
+	max-width: 100%; 
+}
+
+.buttonMore {
+	background-color: $mainGreen;
+	color: $mainWhite;
+	display: inline-block;
+	border-radius: 25px;
+	font-size: rem(16px);
+	padding: 17px 62px;
+	font-weight: 900;
+}
+
+.borderBotLight {
+	border-bottom: 1px solid $lightBorder;
+}
+
+.entryHeader {
+	text-align: center;
+	padding: 47px 0;
+	background-color: $mainGreen;
+
+	h2 {
+		color: $mainWhite;
+	}
+}
+
+.activeMenuItem {
+	color: $mainGreen;
+}
+
+.boxContent.introCont {
+
+
+			p {
+				font-size: rem(24px);
+				line-height: 30px;
+			}
+	}

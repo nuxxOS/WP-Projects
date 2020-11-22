@@ -1,0 +1,23 @@
+.globe {
+	background: url(images/globe.png) no-repeat center center;
+}
+
+.person {
+	background: url(images/person.png) no-repeat center center;
+
+	&.hover {
+		background: url(images/person_hover.png) no-repeat center center;
+	}
+}
+
+.search-icon {
+	background: url(images/search-icon.png) no-repeat center center;
+}
+
+.cart {
+	background: url(images/cart.png) no-repeat center center;
+}
+
+.headset {
+	background: url(images/headset.png) no-repeat center center;
+}

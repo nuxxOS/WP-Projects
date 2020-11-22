@@ -1,0 +1,176 @@
+.page-template-page-products-cjenik {
+
+	#homeContBoxOne {
+		float: left;
+		min-height: 470px;
+	}// end of home cont box one ( global one )
+
+	.entryHeader {
+		clear: both;
+		text-align: center;
+
+		p,a {
+			font-size: rem(16px);
+			color: $mainWhite;
+			text-align: left;
+		}
+
+		h2 {
+			font-size: rem(30px);
+		}
+
+	}// end of entry header
+
+	.productSubMenu {
+		background: $darkBlack;
+
+		.menu {
+
+			padding: 22px 0;
+
+			li {
+
+				display: inline-block;
+				width: auto;
+				margin-left: 50px;
+				
+
+				&:first-of-type {
+					margin-left: 0;
+				}
+
+				a {
+					color: $mainWhite;
+					opacity: 0.5;
+					font-weight: 700;
+					font-size: rem(14px);
+					text-transform: uppercase;
+					display: inline-block;
+					padding: 5px 0;
+					border-bottom: 2px solid transparent;
+
+					&:hover {
+						opacity: 1;
+						border-bottom: 2px solid $mainGreen;
+					}
+
+					&.activePage {
+						border-bottom: 2px solid $mainGreen;
+						opacity: 1;
+					}
+
+				}
+
+			}
+
+		}
+
+	}// end product submenu
+
+	.cjenikContentSection {
+
+		padding: 100px 0 140px 0;
+
+		.cjenikContent {
+
+			.cjenikContentBefore {
+
+				h2 {
+					font-size: rem(24px);
+					line-height: 24px;
+					font-weight: 700;
+					padding-bottom: 40px;
+				}
+
+				h3 {
+					color: $mainGreen;
+					font-size: rem(18px);
+					line-height: 30px;
+					padding-bottom: 10px;
+				}
+
+				p {
+					padding-bottom: 30px;
+					font-size: rem(18px);
+					line-height: 30px;
+				}
+
+			} // end cjenik content before
+
+			.cjenikContentList {
+
+				h2 {
+					font-size: rem(24px);
+					font-weight: 700;
+				}
+
+				.cjenikTabela {
+
+					background: #fafafa;
+					width: 100%;
+					margin: 40px 0;
+
+					th,td {
+						width: 25%;
+						max-width: 25%;
+						vertical-align: middle;
+						height: 80px;
+						border-bottom: 1px solid $lightBorder;
+						font-size: rem(14px);
+					}
+
+					td {
+						text-align: center;
+						background: #f7f7f7;
+						height: 60px;
+						text-transform: uppercase;
+
+						&.kupLic {
+							color: $mainGreen;
+						}
+					}
+
+					th {
+
+						img {
+							max-width: 160px;
+							height: auto;
+						}
+
+					}
+
+					.licTabBold {
+						font-weight: 700;
+					}
+
+				}
+
+			}// end cjenik content list
+
+			.cjenikContentAfter {
+
+				p {
+					font-size: rem(18px);
+					line-height: 24px;
+				}
+
+				a {
+					color: $mainGreen;
+					font-weight: 700;
+					border-bottom: 1px solid $mainGreen;
+				}
+
+			}// end cjenik content after
+
+		}// end cjenik content
+
+	}// end cjenik content
+
+	
+
+	#homeContBoxLogos {
+		border-top: 1px solid $lightBorder;
+	}
+
+}// end of page products funkcionalnosti
+

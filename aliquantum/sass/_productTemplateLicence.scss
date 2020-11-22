@@ -1,0 +1,171 @@
+.page-template-page-products-licence {
+
+	#homeContBoxOne {
+		float: left;
+		min-height: 470px;
+	}// end of home cont box one ( global one )
+
+	.entryHeader {
+		clear: both;
+		text-align: center;
+
+		p,a {
+			font-size: rem(16px);
+			color: $mainWhite;
+			text-align: left;
+		}
+
+		h2 {
+			font-size: rem(30px);
+		}
+
+	}// end of entry header
+
+	.productSubMenu {
+		background: $darkBlack;
+
+		.menu {
+
+			padding: 22px 0;
+
+			li {
+
+				display: inline-block;
+				width: auto;
+				margin-left: 50px;
+				
+
+				&:first-of-type {
+					margin-left: 0;
+				}
+
+				a {
+					color: $mainWhite;
+					opacity: 0.5;
+					font-weight: 700;
+					font-size: rem(14px);
+					text-transform: uppercase;
+					display: inline-block;
+					padding: 5px 0;
+					border-bottom: 2px solid transparent;
+
+					&:hover {
+						opacity: 1;
+						border-bottom: 2px solid $mainGreen;
+					}
+
+					&.activePage {
+						border-bottom: 2px solid $mainGreen;
+						opacity: 1;
+					}
+
+				}
+
+			}
+
+		}
+
+	}// end product submenu
+
+	.licenceContentSection {
+
+		padding: 110px 0;
+
+		.licenceContent {
+
+
+			h2 {
+
+				position: relative;
+				font-size: rem(36px);
+				text-transform: uppercase;
+				font-weight: 900;
+				padding-bottom: 30px;
+				margin-bottom: 40px;
+
+				&::after {
+					content: "";
+					height: 2px;
+					width: 100px;
+					background: $mainGreen;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+				}
+
+			}
+
+			.licenceContentBefore {
+
+				p {
+					padding-bottom: 30px;
+					font-size: rem(18px);
+					line-height: 30px;
+				}
+
+			} // end licence content before
+
+			.licenceContentList {
+
+				margin-bottom: 40px;
+
+				.licenceListItem {
+
+					padding: 30px 0;
+					border-bottom: 1px solid $lightBorder;
+
+					.licenceListImage {
+
+						max-width: 250px;
+						height: auto;
+						float: left;
+						clear: both;
+
+					}
+
+					.licenceListText {
+
+						width: calc(100% - 300px);
+						float: right;
+
+						p {
+							font-size: rem(16px);
+							line-height: 24px;
+
+							&:first-of-type {
+								font-size: rem(18px);
+
+								strong {
+									font-weight: 900;
+								}
+							}
+						}
+
+					}// end licence list text
+
+				}// end licence list item
+
+			}// end licence content list
+
+			.licenceContentAfter {
+
+				a {
+					color: $mainGreen;
+					font-weight: 700;
+					border-bottom: 1px solid $mainGreen;
+				}
+
+			}// end licence content after
+
+		}// end datalab content left
+
+	}// end datalab content
+
+	
+
+	#homeContBoxLogos {
+		border-top: 1px solid $lightBorder;
+	}
+
+}// end of page products funkcionalnosti
+

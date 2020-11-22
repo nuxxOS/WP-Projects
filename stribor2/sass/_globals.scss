@@ -1,0 +1,222 @@
+/* =======================================================================
+## ++ Globals
+========================================================================== */
+
+
+html{
+    font-size: 100%;
+    background-color: #fff;
+    font-family: 'Arimo'!important;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font-family: 'Arimo'!important;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+p {
+	color: #000;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+html.no-js {
+	margin-top: 0px!important;
+}
+
+
+
+
+
+/* =======================================================================
+## ++ GENERIC
+========================================================================== */
+
+
+/* float clearing for IE6 */
+* html .clearfix{
+ height: 1%;
+ overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+ min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+ font-size: 0;
+}
+
+.clr {clear:both;
+
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.left {
+	float: left!important;
+}
+
+.right {
+	float: right!important;
+}
+
+.icon-facebook {
+	color: #fff;
+	display: block;
+	float: left;
+}
+
+.border {
+	padding: 12px;
+	border-radius: 50px;
+	background-color: #d4a011; 
+}
+
+.border:hover {
+	background-color: #f52830;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-title {
+	color: #000;
+	font-weight: 700;
+	text-align: left;
+	border-bottom: 1px solid #e1e1e1;
+	padding-bottom: 20px;
+}
+
+.page-subtitle {
+	line-height: 80px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.newsletter-title {
+	color: #fff;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 200px;
+	display: block;
+	float: left;
+	padding-left: 40px;
+}
+
+.uppercase {
+	text-transform: uppercase
+}
+
+
+
+
+
+/* =======================================================================
+## ++ CONTAINERS
+========================================================================== */
+
+
+.container-small {
+	width: auto;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.container {
+	width: auto;
+	max-width: 1860px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.container-full {
+	width: auto;
+	max-width: 1920px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+
+/* =============================================================================
+COLORS
+========================================================================== */
+
+
+.white {
+	color: #ffffff;
+}
+
+.black {
+	color: #000;
+}
+
+.red {
+	color: #f52830;
+}
+
+.gray {
+	color: #e1e1e1;
+}

@@ -1,0 +1,151 @@
+.page-template-page-o-nama {
+
+	#homeContBoxOne {
+		float: left;
+		min-height: 470px;
+	}
+
+	.entryHeader {
+		clear: both;
+		text-align: center;
+
+		p,a {
+			font-size: rem(16px);
+			color: $mainWhite;
+			text-align: left;
+		}
+
+	}
+
+	.supportCont {
+
+		padding: 110px 0;
+		border: 1px solid $lightBorder;
+
+		.aboutSection {
+
+			position: relative;
+			float: left;
+			width: 100%;
+			padding-bottom: 40px;
+
+			&::before {
+				content: " ";
+				position: absolute;
+				width: 1px;
+				height: 100%;
+				background: $lightBorder;
+				visibility: visible;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 30px;
+				height: 60px;
+				background: url(images/o-nama-check.png) no-repeat center center;
+				background-color: $mainWhite;
+				visibility: visible;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 40px;
+				margin: auto;
+			}
+		}
+
+		div.floatL {
+			padding-right: 50px;
+
+			p {
+				text-align: right;
+			}
+
+		}
+
+		div.floatR {
+			padding-left: 50px;
+		}
+
+		.aboutSectionImage {
+
+		}/* end about section image */
+
+		.aboutSectionText {
+
+			p {
+				font-size: rem(16px);
+				line-height: 24px;
+				font-weight: 400;
+			}
+
+		}/* end about section text */
+
+
+	}/* end supp cont */
+	
+	.aboutChildPages {
+		
+		background: url(images/o-nama-child-bg.jpg) no-repeat center center;
+		background-size: cover;
+		padding: 120px 0;
+
+		.aboutChildPage {
+			float: left;
+			width: 31.667%;
+			margin-right: 2.5%;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			a {
+				display: block;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-ms-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+
+				&:hover {
+				
+				-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+				-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+				box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+
+					h3 {
+						color: $mainGreen;
+					}
+				}
+
+				h3 {
+					padding: 27px 10px;
+					text-align: center;
+					background-color: $mainWhite;
+					color: $mainTypog;
+					text-transform: uppercase;
+					font-weight: 700;
+					font-size: rem(16px);
+					-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-ms-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+				}
+
+				img {
+					max-width: 100%;
+				}
+
+			}// end of a tag
+
+			
+		}// end about child page
+
+	} // end about child pages
+	
+
+}

@@ -1,0 +1,109 @@
+.page-template-page-support {
+
+	#homeContBoxOne {
+		float: left;
+		min-height: 470px;
+	}
+
+	.entryHeader {
+		clear: both;
+		text-align: left;
+
+		p,a {
+			font-size: rem(16px);
+			color: $mainWhite;
+		}
+
+	}
+
+	.supportCont {
+
+		padding: 100px 0;
+		border: 1px solid $lightBorder;
+		
+		h1 {
+			font-size: rem(36px);
+			font-weight: 900;
+			text-transform: uppercase;
+			position: relative;
+			padding-bottom: 80px;
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 40px;
+				left: 0;
+				width: 100px;
+				height: 2px;
+				background-color: $mainGreen;
+			}
+		}
+
+		.suppText {
+			width: calculateWidth(40%);
+			float: left;
+
+			p {
+				font-size: rem(18px);
+				line-height: 30px;
+				margin-bottom: 40px;
+			}
+		}
+
+		.suppImg {
+
+			width: 36%;
+			float: right;
+
+			p {
+				margin-bottom: 30px;
+			}
+
+			.suppinfoico {
+				border: 1px solid $lightBorder;
+				display: inline-block;
+				border-radius: 50%;
+				width: 100px;
+				height: 100px;
+				text-align: center;
+				position: relative;
+				float: left;
+
+				img {
+					position: absolute;
+					margin: auto;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+				}
+			}
+
+			.suppinfotxt {
+
+				display: inline-block;
+				float: left;
+				padding-left: 20px;
+				
+				span {
+					
+					display: block;
+					font-size: rem(20px);
+					font-weight: 700;
+
+					&:first-of-type {
+						color: $mainGreen;
+						font-size: rem(16px);
+						padding: 20px 0;
+						font-weight: 400;
+					}
+				}
+				
+			}
+
+		} /* end supp image */
+	}/* end supp cont */
+
+	
+
+}

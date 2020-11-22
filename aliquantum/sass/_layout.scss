@@ -1,0 +1,101 @@
+/* WIDTH */
+
+.contHalf {
+	width: 50%;
+}
+
+.contThird {
+	width: 33%;
+}
+
+.contFull {
+	width: 100%;
+}
+
+
+
+/* FLOATS */
+
+.floatR {
+	float: right;
+}
+
+.floatL {
+	float: left;
+}
+
+.floatN {
+	float: none;
+}
+
+.floatRFull {
+	float: right;
+	width: 100%;
+}
+
+.floatLFull {
+	float: left;
+	width: 100%;
+}
+
+
+/* ALIGN */
+
+.alignR {
+	text-align: right;
+}
+
+.alignL {
+	text-align: left;
+}
+
+.alignC {
+	text-align: center;
+}
+
+
+/* DISPLAY */
+
+.disIB {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+.disB {
+	display: block;
+}
+
+
+/* MARGIN */
+
+.marginT40 {
+	margin-top: 40px;
+}
+
+.marginB20 {
+	margin-bottom: 20px;
+}
+
+.marginB40 {
+	margin-bottom: 40px;
+}
+
+.marginB60 {
+	margin-bottom: 60px;
+}
+
+.marginB80 {
+	margin-bottom: 80px;
+}
+
+
+/* PADDING */
+
+.paddingB20 {
+	padding-bottom: 20px;
+}
+
+.paddingR {
+	padding-right: 50px; /* for about us page, padding on left floated elements */
+}

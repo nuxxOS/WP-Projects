@@ -1,0 +1,30 @@
+.footerWrapper {
+	background: $darkBlack;
+	color: $otherLightTypog;
+	padding: 40px 0 20px 0;
+
+	#menu-footer-menu {
+		float: left;
+		margin-bottom: 80px;
+
+		li {
+			display: inline-block;
+			margin-right: 20px;
+
+			a {
+				color: $otherLightTypog;
+			}
+		}
+	}
+
+	.contThird {
+		float: right;
+		text-align: right;
+
+		a {
+			color: $otherLightTypog;
+			font-size: rem(18px);
+			margin-left: 20px;
+		}
+	}
+}

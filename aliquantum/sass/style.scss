@@ -1,0 +1,64 @@
+/* CSS Document */
+/*!
+Theme Name: Olympos
+Description: Blank Wordpress Theme
+Version: 3.0
+Author: Ivan Dorić
+Author URI: http://www.watch-learn.com/
+Tags: starter theme, light, sass, gulp, livereload
+
+        The CSS, XHTML is released under GPL:
+        http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+/* Vendor */
+@import "susy";
+@import "su";
+
+
+/* Setup */
+@import "reset";
+@import "mixins";
+@import "layout";
+@import "icons";
+@import "variables";
+@import "fonts";
+@import "globals";
+
+
+/* WP parts */
+@import "header";
+@import "homepage";
+@import "support";
+@import "contacts";
+@import "services";
+@import "about";
+@import "aboutInfo";
+@import "aboutTeam";
+@import "aboutNews";
+@import "single";
+@import "productTemplatePantheon";
+@import "productTemplateFunkcionalnosti";
+@import "productTemplateDatalab";
+@import "productTemplateLicence";
+@import "productTemplateCjenik";
+@import "dodatna_rjesenja";
+@import "singleProduct";
+@import "sidebar";
+@import "footer";
+
+
+/* Slider - Swiper (iDangerous) */
+@import "swiper";
+
+/* Select plugin - Chosen */
+@import "chosen.min";
+
+/* Select plugin - Chosen */
+@import "magnific-popup";
+
+/* Resposnive css */
+@import "responsive";
+
+

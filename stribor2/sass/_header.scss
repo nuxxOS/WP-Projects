@@ -1,0 +1,37 @@
+.header-logo {
+	float: left;
+	width: 13.7%;
+	padding: 15px 0 0 30px;
+}
+
+.nav {
+	display: block;
+	float: right;
+	margin-right: 50px;
+}
+
+.nav ul {
+	float: right;
+}
+
+.nav ul li {
+	float: left;
+	display: inline-block;
+	line-height: 100px;
+	padding-left: 64px;
+}
+
+.nav ul li a {
+	display: block;
+	font-size: 16px;
+	width: 100%;
+	font-weight: 700;
+	color: #000;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.icon-home3 {
+	color: #f52830;
+	font-size: 25px;
+}

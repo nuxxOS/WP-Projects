@@ -1,0 +1,112 @@
+.reference-page-wrap,
+.reference-page-wrap .reference-list {
+	margin-top: 30px;
+}
+
+.reference-page-title {
+	color: #fff;
+	font-size: 24px;
+	text-align: left;
+	line-height: 60px;
+	background-color: #bcc3cc;
+	padding-left: 30px;
+}
+
+.reference-page-wrap .reference-list .reference-item {
+	float: left;
+	width: calc(100% / 5 - 22px);
+	margin-right: 27.5px;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+.reference-page-wrap .reference-list .reference-item:nth-of-type(5n) {
+	margin-right: 0px;
+}
+
+.reference-page-wrap .reference-list .reference-item .reference-image {
+	width: 100%;
+	height: 260px;
+	border-bottom: 0px;
+}
+
+.reference-page-wrap .reference-list .reference-item .reference-image img {
+	border: 1px solid #e1e1e1;
+}
+
+
+.reference-page-wrap .reference-list .reference-item .reference-title {
+	line-height: 70px;
+	text-align: center;
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.reference-page-wrap .reference-list .reference-item .reference-title h5 {
+	color: #000;
+	font-size: 16px;
+}
+
+.mfp-container {
+	position: relative!important;
+	margin: 0 auto!important;
+	max-width: 1200px;
+	background-color: #fff;
+	top: 50%!important;
+}
+
+.mfp-counter {
+	color: #878d94!important;
+	right: 50%!important;
+	top: 5!important;
+	font-size: 16px!important;
+}
+
+
+button.icon-chevron-left {
+	content: "\e902";
+	position: absolute;
+    left: 30px;
+    top: 50%;
+    z-index: 9999;
+    border-style: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+button.icon-chevron-right {
+	content: "\e901";
+	position: absolute;
+	top: 50%;
+    right: 30px;
+    z-index: 9999;
+    border-style: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+button.border {
+	padding: 15px;
+}
+
+.mfp-image-holder button.mfp-close {
+	padding: 2px 8px 0;
+	font-size: 24px;
+	position: absolute;
+	top: -10px;
+	right: -19px;
+	width: auto;
+	line-height: normal;
+	height: auto;
+	border-radius: 50%;
+	background-color: #878d94;
+	opacity: 1;
+	cursor: pointer!important;
+}
+
+img.mfp-img {
+	width: 100%!important;
+	padding: 10px 0 40px!important;
+}
+
+
